@@ -138,9 +138,6 @@ class Manager(object):
                 hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
                 loss = self.moment.contrastive_loss(hidden, labels, is_memory)
 
-                if len(torch.nonzero(torch.isnan(loss)).squeeze()) > 0:
-                    break
-
                 optimizer.zero_grad()
                 loss.backward()
                 optimizer.step()

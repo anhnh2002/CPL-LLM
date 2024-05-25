@@ -168,7 +168,7 @@ class LlamaClassification(LlamaPreTrainedModel):
         
         output = torch.stack(output)
         output = output.view(output.shape[0],-1) # [B,1,H] --> [B,H]
-        return output, None
+        return output.to(torch.float32), None
     
 class LlamaLMClassification(LlamaPreTrainedModel):
     _tied_weights_keys = ["lm_head.weight"]
@@ -265,4 +265,4 @@ class LlamaLMClassification(LlamaPreTrainedModel):
         logit = self.lm_head(output) # B,1,V
         output = output.view(output.shape[0],-1) # [B,1,H] --> [B,H]
 
-        return output, logit.squeeze(1)
+        return output.to(torch.float32), logit.squeeze(1).to(torch.float32)
