@@ -124,7 +124,7 @@ class Manager(object):
             if param.requires_grad == True:
                 trainable_params.append(param)
 
-        optimizer = optim.Adam([{"params": trainable_params, "lr": self.config.lr}])        
+        optimizer = optim.Adam([{"params": trainable_params, "lr": self.config.lr}])      
         # optimizer = optim.Adam(params=encoder.parameters(), lr=self.config.lr)
 
         encoder.train()
@@ -132,16 +132,24 @@ class Manager(object):
         softmax = nn.Softmax(dim=0)
         for i in range(epoch):
             total_loss = 0
+            accum_iter = 8
             for batch_num, (instance, labels, ind) in tqdm(enumerate(data_loader)):
                 for k in instance.keys():
                     instance[k] = instance[k].to(self.config.device)
                 hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
                 loss = self.moment.contrastive_loss(hidden, labels, is_memory)
 
-                optimizer.zero_grad()
+                if batch_num == 0:
+                    optimizer.zero_grad()
+
+                total_loss += loss.item()
+
+                loss = loss/accum_iter
                 loss.backward()
-                optimizer.step()
-                optimizer.zero_grad()
+
+                if ((batch_num + 1) % accum_iter == 0) or (batch_num + 1 == len(data_loader)):
+                    optimizer.step()
+                    optimizer.zero_grad()
                 # update moment
                 if is_memory:
                     self.moment.update(ind, hidden.detach().cpu().data, is_memory=True)
@@ -149,7 +157,7 @@ class Manager(object):
                 else:
                     self.moment.update(ind, hidden.detach().cpu().data, is_memory=False)
                 
-                total_loss += loss.item()
+                
                 # print
             total_loss = total_loss/len(data_loader)
             if is_memory:
@@ -223,7 +231,7 @@ class Manager(object):
 
         # encoder
         encoder = LlamaClassification.from_pretrained("meta-llama/Llama-2-7b-hf",
-                                                        torch_dtype=torch.float16,
+                                                        # torch_dtype=torch.float16,
                                                         token="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",
                                                         device_map="auto")
         peft_config = LoraConfig(task_type=TaskType.SEQ_CLS,
