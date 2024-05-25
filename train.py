@@ -13,10 +13,10 @@ from config import Config
 from sampler import data_sampler_CFRL
 from data_loader import get_data_loader_BERT
 from utils import Moment, gen_data
-from encoder import LlamaLMClassification
+from encoder import LlamaClassification
 from peft import get_peft_model, LoraConfig, TaskType
 
-
+from tqdm import tqdm
 import logging
 
 logger = logging.getLogger()
@@ -65,7 +65,7 @@ class Manager(object):
         for step, (instance, label, idx) in enumerate(data_loader):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
-            hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
+            hidden, lmhead_output = encoder(instance) 
             fea = hidden.detach().cpu().data # (1, H)
             features.append(fea)    
         features = torch.cat(features, dim=0) # (M, H)
@@ -85,7 +85,7 @@ class Manager(object):
         for step, (instance, label, idx) in enumerate(data_loader):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
-            hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
+            hidden, lmhead_output = encoder(instance) 
             fea = hidden.detach().cpu().data # (1, H)
             features.append(fea)
 
@@ -124,11 +124,13 @@ class Manager(object):
         epoch = self.config.epoch_mem if is_memory else self.config.epoch
         softmax = nn.Softmax(dim=0)
         for i in range(epoch):
-            for batch_num, (instance, labels, ind) in enumerate(data_loader):
+            total_loss = 0
+            for batch_num, (instance, labels, ind) in tqdm(enumerate(data_loader)):
                 for k in instance.keys():
                     instance[k] = instance[k].to(self.config.device)
-                hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
+                hidden, lmhead_output = encoder(instance)
                 loss = self.moment.contrastive_loss(hidden, labels, is_memory)
+
                 optimizer.zero_grad()
                 loss.backward()
                 optimizer.step()
@@ -139,14 +141,18 @@ class Manager(object):
                     # self.moment.update_allmem(encoder)
                 else:
                     self.moment.update(ind, hidden.detach().cpu().data, is_memory=False)
+                
+                total_loss += loss.item()
                 # print
-                if is_memory:
-                    sys.stdout.write('MemoryTrain:  epoch {0:2}, batch {1:5} | loss: {2:2.7f}'.format(i, batch_num, loss.item()) + '\r')
-                    logger.info('MemoryTrain:  epoch {0:2}, batch {1:5} | loss: {2:2.7f}'.format(i, batch_num, loss.item()))
-                else:
-                    sys.stdout.write('CurrentTrain: epoch {0:2}, batch {1:5} | loss: {2:2.7f}'.format(i, batch_num, loss.item()) + '\r')
-                    logger.info('CurrentTrain: epoch {0:2}, batch {1:5} | loss: {2:2.7f}'.format(i, batch_num, loss.item()))
-                sys.stdout.flush() 
+            total_loss = total_loss/epoch
+            if is_memory:
+                sys.stdout.write('MemoryTrain:  epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss) + '\r')
+                logger.info('MemoryTrain:  epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss))
+            else:
+                sys.stdout.write('CurrentTrain: epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss) + '\r')
+                logger.info('CurrentTrain: epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss))
+            total_loss=0
+            sys.stdout.flush() 
         print('')             
 
     def eval_encoder_proto(self, encoder, seen_proto, seen_relid, test_data):
@@ -159,7 +165,7 @@ class Manager(object):
         for batch_num, (instance, label, _) in enumerate(test_loader):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
-            hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
+            hidden, lmhead_output = encoder(instance)
             fea = hidden.cpu().data # place in cpu to eval
             logits = -self._edist(fea, seen_proto) # (B, N) ;N is the number of seen relations
 
@@ -173,10 +179,10 @@ class Manager(object):
             acc = correct / batch_size
             corrects += correct
             total += batch_size
-            logger.info('[EVAL] batch: {0:4} | acc: {1:3.2f}%,  total acc: {2:3.2f}%   '.format(batch_num, 100 * acc, 100 * (corrects / total)))
-            sys.stdout.write('[EVAL] batch: {0:4} | acc: {1:3.2f}%,  total acc: {2:3.2f}%   '\
-                .format(batch_num, 100 * acc, 100 * (corrects / total)) + '\r')
-            sys.stdout.flush()        
+        logger.info('acc: {1:3.2f}%,  total acc: {2:3.2f}%   '.format(100 * acc, 100 * (corrects / total)))
+        sys.stdout.write('acc: {1:3.2f}%,  total acc: {2:3.2f}%   '\
+            .format(100 * acc, 100 * (corrects / total)) + '\r')
+        sys.stdout.flush()        
         print('')
         return corrects / total
 
@@ -210,16 +216,15 @@ class Manager(object):
         self.r2desc = self._read_description(self.config.relation_description)
 
         # encoder
-        encoder = LlamaLMClassification.from_pretrained("meta-llama/Llama-2-7b-hf",
+        encoder = LlamaClassification.from_pretrained("meta-llama/Llama-2-7b-hf",
                                                         torch_dtype=torch.float16,
                                                         token="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",
                                                         device_map="auto")
         peft_config = LoraConfig(task_type=TaskType.SEQ_CLS,
-                                target_modules=["q_proj", "v_proj", "o_proj", "lm_head"],
+                                target_modules=["q_proj", "v_proj", "o_proj"],
                                 r=16,
                                 lora_alpha=32,
-                                lora_dropout=0.1,
-                                modules_to_save=["info_nce_fc"])
+                                lora_dropout=0.1)
         
         encoder = get_peft_model(encoder, peft_config)
 
