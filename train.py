@@ -146,11 +146,11 @@ class Manager(object):
                 # print
             total_loss = total_loss/epoch
             if is_memory:
-                sys.stdout.write('MemoryTrain:  epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss) + '\r')
-                logger.info('MemoryTrain:  epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss))
+                sys.stdout.write(f'MemoryTrain:  epoch {i} | loss: {total_loss:.4f}' + '\r')
+                logger.info(f'MemoryTrain:  epoch {i} | loss: {total_loss:.4f}')
             else:
-                sys.stdout.write('CurrentTrain: epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss) + '\r')
-                logger.info('CurrentTrain: epoch {0:2} | loss: {2:2.7f}'.format(i, total_loss))
+                sys.stdout.write(f'CurrentTrain:  epoch {i} | loss: {total_loss:.4f}' + '\r')
+                logger.info(f'CurrentTrain:  epoch {i} | loss: {total_loss:.4f}')
             total_loss=0
             sys.stdout.flush() 
         print('')             
@@ -179,9 +179,8 @@ class Manager(object):
             acc = correct / batch_size
             corrects += correct
             total += batch_size
-        logger.info('acc: {1:3.2f}%,  total acc: {2:3.2f}%   '.format(100 * acc, 100 * (corrects / total)))
-        sys.stdout.write('acc: {1:3.2f}%,  total acc: {2:3.2f}%   '\
-            .format(100 * acc, 100 * (corrects / total)) + '\r')
+        logger.info(f'acc: {100 * acc:.2f}%,  total acc: {100 * (corrects / total):.2f}%   ')
+        sys.stdout.write(f'acc: {100 * acc:.2f}%,  total acc: {100 * (corrects / total):.2f}%   ' + '\r')
         sys.stdout.flush()        
         print('')
         return corrects / total
