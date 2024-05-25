@@ -144,7 +144,7 @@ class Manager(object):
                 
                 total_loss += loss.item()
                 # print
-            total_loss = total_loss/epoch
+            total_loss = total_loss/len(data_loader)
             if is_memory:
                 sys.stdout.write(f'MemoryTrain:  epoch {i} | loss: {total_loss:.4f}' + '\r')
                 logger.info(f'MemoryTrain:  epoch {i} | loss: {total_loss:.4f}')
@@ -179,8 +179,8 @@ class Manager(object):
             acc = correct / batch_size
             corrects += correct
             total += batch_size
-        logger.info(f'acc: {100 * acc:.2f}%,  total acc: {100 * (corrects / total):.2f}%   ')
-        sys.stdout.write(f'acc: {100 * acc:.2f}%,  total acc: {100 * (corrects / total):.2f}%   ' + '\r')
+        logger.info(f'total acc: {100 * (corrects / total):.2f}%   ')
+        sys.stdout.write(f'total acc: {100 * (corrects / total):.2f}%   ' + '\r')
         sys.stdout.flush()        
         print('')
         return corrects / total
