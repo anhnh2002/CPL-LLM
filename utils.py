@@ -24,7 +24,7 @@ class Moment:
         encoder.eval()
         datalen = len(dataset)
         if not is_memory:
-            self.features = torch.zeros(datalen, self.config.encoder_output_size)
+            self.features = torch.zeros(datalen, self.config.encoder_output_size, dtype=torch.float16)
             data_loader = get_data_loader_BERT(self.config, dataset) # shuffle=False
             lbs = []
             for step, (instance, labels, ind) in enumerate(data_loader):
@@ -38,7 +38,7 @@ class Moment:
             self.labels = lbs
         else:
             self.mem_samples = dataset
-            self.mem_features = torch.zeros(datalen, self.config.encoder_output_size)
+            self.mem_features = torch.zeros(datalen, self.config.encoder_output_size, dtype=torch.float16)
             data_loader = get_data_loader_BERT(self.config, dataset) # shuffle=False
             lbs = []
             for step, (instance, labels, ind) in enumerate(data_loader):
@@ -75,7 +75,7 @@ class Moment:
 
         num = len(cinds)
         feats = self.mem_features
-        centroids = torch.zeros((num, feats.size(1)), dtype=torch.float32, device=feats.device)
+        centroids = torch.zeros((num, feats.size(1)), dtype=torch.float16, device=feats.device)
         for i, c in enumerate(cinds):
             ind = np.where(self.mem_labels.cpu().numpy() == c)[0]
             centroids[i, :] = feats[ind, :].mean(dim=0)
@@ -103,7 +103,7 @@ class Moment:
         ct_x = F.normalize(ct_x, p=2, dim=1)
         
         t1 = torch.mm(x, ct_x.T) + 1 # 0 <= cos + 1 <= 2
-        zeros = (torch.zeros_like(t1)).to(self.config.device)
+        zeros = (torch.zeros_like(t1, dtype=torch.float16)).to(self.config.device)
         pos = self.m + 0.5 * t1
         neg = 1 - self.m + 0.5 * t1
         dot_product_tempered_pos = torch.where(pos > 0, pos * t1 / self.temperature, zeros)
