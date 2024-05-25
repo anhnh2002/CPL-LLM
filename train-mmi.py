@@ -119,7 +119,15 @@ class Manager(object):
 
     def train_model(self, encoder, training_data, is_memory=False):
         data_loader = get_data_loader_BERT(self.config, training_data, shuffle=True)
-        optimizer = optim.Adam(params=encoder.parameters(), lr=self.config.lr)
+        
+        trainable_params = []
+        for _, param in encoder.named_parameters():
+            if param.requires_grad == True:
+                trainable_params.append(param)
+
+        optimizer = optim.Adam([{"params": trainable_params, "lr": self.config.lr}])
+        # optimizer = optim.Adam(params=encoder.parameters(), lr=self.config.lr)
+
         encoder.train()
         epoch = self.config.epoch_mem if is_memory else self.config.epoch
         softmax = nn.Softmax(dim=0)
