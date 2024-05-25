@@ -65,7 +65,7 @@ class Manager(object):
         for step, (instance, label, idx) in enumerate(data_loader):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
-            hidden, lmhead_output = encoder(instance) 
+            hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
             fea = hidden.detach().cpu().data # (1, H)
             features.append(fea)    
         features = torch.cat(features, dim=0) # (M, H)
@@ -85,7 +85,7 @@ class Manager(object):
         for step, (instance, label, idx) in enumerate(data_loader):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
-            hidden, lmhead_output = encoder(instance) 
+            hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
             fea = hidden.detach().cpu().data # (1, H)
             features.append(fea)
 
@@ -127,7 +127,7 @@ class Manager(object):
             for batch_num, (instance, labels, ind) in enumerate(data_loader):
                 for k in instance.keys():
                     instance[k] = instance[k].to(self.config.device)
-                hidden, lmhead_output = encoder(instance)
+                hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
                 loss = self.moment.contrastive_loss(hidden, labels, is_memory)
                 optimizer.zero_grad()
                 loss.backward()
@@ -159,7 +159,7 @@ class Manager(object):
         for batch_num, (instance, label, _) in enumerate(test_loader):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
-            hidden, lmhead_output = encoder(instance)
+            hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
             fea = hidden.cpu().data # place in cpu to eval
             logits = -self._edist(fea, seen_proto) # (B, N) ;N is the number of seen relations
 
