@@ -123,6 +123,7 @@ class Moment:
 
         sum_temp = torch.sum(exp_dot_tempered_pos * mask_combined_pos, dim=1, keepdim=True) \
             + torch.sum(exp_dot_tempered_neg * mask_combined_neg, dim=1, keepdim=True)
+        print(sum_temp)
         log_prob = -torch.log(exp_dot_tempered_pos / sum_temp)
         supervised_contrastive_loss_per_sample = torch.sum(log_prob * mask_combined_pos, dim=1) / cardinality_per_samples
         supervised_contrastive_loss = torch.mean(supervised_contrastive_loss_per_sample)

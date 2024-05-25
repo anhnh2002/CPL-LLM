@@ -82,7 +82,7 @@ class Manager(object):
             drop_last= False, batch_size=1) # batch_size must = 1
         features = []
         encoder.eval()
-        for step, (instance, label, idx) in enumerate(data_loader):
+        for step, (instance, label, idx) in tqdm(enumerate(data_loader)):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
             hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
@@ -137,6 +137,9 @@ class Manager(object):
                     instance[k] = instance[k].to(self.config.device)
                 hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
                 loss = self.moment.contrastive_loss(hidden, labels, is_memory)
+
+                if len(torch.nonzero(torch.isnan(loss)).squeeze()) > 0:
+                    break
 
                 optimizer.zero_grad()
                 loss.backward()
