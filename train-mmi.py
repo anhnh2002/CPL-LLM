@@ -129,6 +129,37 @@ class Manager(object):
                     instance[k] = instance[k].to(self.config.device)
                 hidden, lmhead_output = encoder(instance)
                 loss = self.moment.contrastive_loss(hidden, labels, is_memory)
+
+                # compute infonceloss
+                infoNCE_loss = 0
+                list_labels = labels.cpu().numpy().tolist()
+
+                for j in range(len(list_labels)):
+                    negative_sample_indexs = np.where(np.array(list_labels) != list_labels[j])[0]
+                    
+                    positive_hidden = hidden[j].unsqueeze(0)
+                    negative_hidden = hidden[negative_sample_indexs]
+
+                    positive_lmhead_output = lmhead_output[j].unsqueeze(0)
+                    negative_lmhead_output = lmhead_output[negative_sample_indexs]
+
+
+                    f_pos = encoder.infoNCE_f(positive_lmhead_output, positive_hidden)
+                    f_neg = encoder.infoNCE_f(positive_lmhead_output, negative_hidden)
+
+                    # print(f_pos.shape)
+                    # print(f_neg.shape)
+                    f_concat = torch.cat([f_pos, f_neg], dim=1).squeeze()
+                    f_concat = torch.log(torch.max(f_concat , torch.tensor(1e-9).to(self.config.device)))
+                    try:
+                        infoNCE_loss += -torch.log(softmax(f_concat)[0])
+                    except:
+                        print(f"cant callculate info here: {ind}")
+                        logger.error(f"cant callculate info here: {ind}")
+
+                infoNCE_loss = infoNCE_loss / len(list_labels)
+                loss = 0.8*loss + infoNCE_loss
+
                 optimizer.zero_grad()
                 loss.backward()
                 optimizer.step()
