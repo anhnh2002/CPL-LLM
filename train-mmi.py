@@ -27,7 +27,7 @@ stdout_handler = logging.StreamHandler(sys.stdout)
 stdout_handler.setLevel(logging.DEBUG)
 stdout_handler.setFormatter(formatter)
 
-file_handler = logging.FileHandler('logs.log')
+file_handler = logging.FileHandler('mmi-logs.log')
 file_handler.setLevel(logging.DEBUG)
 file_handler.setFormatter(formatter)
 
@@ -82,7 +82,7 @@ class Manager(object):
             drop_last= False, batch_size=1) # batch_size must = 1
         features = []
         encoder.eval()
-        for step, (instance, label, idx) in enumerate(data_loader):
+        for step, (instance, label, idx) in tqdm(enumerate(data_loader)):
             for k in instance.keys():
                 instance[k] = instance[k].to(self.config.device)
             hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
@@ -119,13 +119,12 @@ class Manager(object):
 
     def train_model(self, encoder, training_data, is_memory=False):
         data_loader = get_data_loader_BERT(self.config, training_data, shuffle=True)
-        
         trainable_params = []
         for _, param in encoder.named_parameters():
             if param.requires_grad == True:
                 trainable_params.append(param)
 
-        optimizer = optim.Adam([{"params": trainable_params, "lr": self.config.lr}])
+        optimizer = optim.Adam([{"params": trainable_params, "lr": self.config.lr}])      
         # optimizer = optim.Adam(params=encoder.parameters(), lr=self.config.lr)
 
         encoder.train()
@@ -133,6 +132,7 @@ class Manager(object):
         softmax = nn.Softmax(dim=0)
         for i in range(epoch):
             total_loss = 0
+            accum_iter = 8
             for batch_num, (instance, labels, ind) in tqdm(enumerate(data_loader)):
                 for k in instance.keys():
                     instance[k] = instance[k].to(self.config.device)
@@ -169,10 +169,17 @@ class Manager(object):
                 infoNCE_loss = infoNCE_loss / len(list_labels)
                 loss = 0.8*loss + infoNCE_loss
 
-                optimizer.zero_grad()
+                if batch_num == 0:
+                    optimizer.zero_grad()
+
+                total_loss += loss.item()
+
+                loss = loss/accum_iter
                 loss.backward()
-                optimizer.step()
-                optimizer.zero_grad()
+
+                if ((batch_num + 1) % accum_iter == 0) or (batch_num + 1 == len(data_loader)):
+                    optimizer.step()
+                    optimizer.zero_grad()
                 # update moment
                 if is_memory:
                     self.moment.update(ind, hidden.detach().cpu().data, is_memory=True)
@@ -180,7 +187,7 @@ class Manager(object):
                 else:
                     self.moment.update(ind, hidden.detach().cpu().data, is_memory=False)
                 
-                total_loss += loss.item()
+                
                 # print
             total_loss = total_loss/len(data_loader)
             if is_memory:
@@ -194,7 +201,7 @@ class Manager(object):
         print('')             
 
     def eval_encoder_proto(self, encoder, seen_proto, seen_relid, test_data):
-        batch_size = 16
+        batch_size = 2
         test_loader = get_data_loader_BERT(self.config, test_data, False, False, batch_size)
         
         corrects = 0.0
@@ -219,7 +226,7 @@ class Manager(object):
             total += batch_size
         logger.info(f'total acc: {100 * (corrects / total):.2f}%   ')
         sys.stdout.write(f'total acc: {100 * (corrects / total):.2f}%   ' + '\r')
-        sys.stdout.flush()         
+        sys.stdout.flush()        
         print('')
         return corrects / total
 
@@ -254,7 +261,7 @@ class Manager(object):
 
         # encoder
         encoder = LlamaLMClassification.from_pretrained("meta-llama/Llama-2-7b-hf",
-                                                        torch_dtype=torch.float16,
+                                                        # torch_dtype=torch.float16,
                                                         token="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",
                                                         device_map="auto")
         peft_config = LoraConfig(task_type=TaskType.SEQ_CLS,
