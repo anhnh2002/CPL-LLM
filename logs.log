@@ -1,0 +1,1007 @@
+2024-05-25 09:16:06,537 | INFO | #############params############
+2024-05-25 09:16:06,537 | INFO | Task=Tacred, 10-shot
+2024-05-25 09:16:06,537 | INFO | mem=1, margin=0.3, gen=1, gen_num=5
+2024-05-25 09:16:06,537 | INFO | #############params############
+2024-05-25 09:16:11,636 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-25 09:23:24,672 | INFO | CurrentTrain:  epoch 0 | loss: 13.7038
+2024-05-25 09:28:00,756 | INFO | CurrentTrain:  epoch 1 | loss: 12.2307
+2024-05-25 09:32:36,797 | INFO | CurrentTrain:  epoch 2 | loss: 10.2324
+2024-05-25 09:37:12,170 | INFO | CurrentTrain:  epoch 3 | loss: 9.6232
+2024-05-25 09:41:51,912 | INFO | CurrentTrain:  epoch 4 | loss: 9.1952
+2024-05-25 09:46:38,715 | INFO | CurrentTrain:  epoch 5 | loss: 8.8614
+2024-05-25 09:51:23,235 | INFO | CurrentTrain:  epoch 6 | loss: 8.3545
+2024-05-25 09:56:05,549 | INFO | CurrentTrain:  epoch 7 | loss: 8.1751
+2024-05-25 10:00:40,825 | INFO | CurrentTrain:  epoch 8 | loss: 8.0668
+2024-05-25 10:05:15,416 | INFO | CurrentTrain:  epoch 9 | loss: 8.0485
+2024-05-25 10:10:20,423 | INFO | total acc: 84.94%   
+2024-05-25 10:12:27,424 | INFO | total acc: 84.94%   
+2024-05-25 10:13:02,709 | INFO | CurrentTrain:  epoch 0 | loss: 9.2543
+2024-05-25 10:13:25,684 | INFO | CurrentTrain:  epoch 1 | loss: 7.4996
+2024-05-25 10:13:48,611 | INFO | CurrentTrain:  epoch 2 | loss: 7.3544
+2024-05-25 10:14:11,533 | INFO | CurrentTrain:  epoch 3 | loss: 7.0527
+2024-05-25 10:14:34,471 | INFO | CurrentTrain:  epoch 4 | loss: 7.5716
+2024-05-25 10:14:57,418 | INFO | CurrentTrain:  epoch 5 | loss: 7.7485
+2024-05-25 10:15:20,373 | INFO | CurrentTrain:  epoch 6 | loss: 7.6013
+2024-05-25 10:15:43,401 | INFO | CurrentTrain:  epoch 7 | loss: 7.3340
+2024-05-25 10:16:06,478 | INFO | CurrentTrain:  epoch 8 | loss: 6.7615
+2024-05-25 10:16:29,529 | INFO | CurrentTrain:  epoch 9 | loss: 6.1487
+2024-05-25 10:17:51,401 | INFO | MemoryTrain:  epoch 0 | loss: 6.5547
+2024-05-25 10:18:21,599 | INFO | MemoryTrain:  epoch 1 | loss: 5.8704
+2024-05-25 10:18:51,770 | INFO | MemoryTrain:  epoch 2 | loss: 5.2874
+2024-05-25 10:19:21,894 | INFO | MemoryTrain:  epoch 3 | loss: 5.3499
+2024-05-25 10:19:52,005 | INFO | MemoryTrain:  epoch 4 | loss: 5.0512
+2024-05-25 10:20:22,066 | INFO | MemoryTrain:  epoch 5 | loss: 5.2760
+2024-05-25 10:20:52,097 | INFO | MemoryTrain:  epoch 6 | loss: 5.0395
+2024-05-25 10:21:22,096 | INFO | MemoryTrain:  epoch 7 | loss: 5.1281
+2024-05-25 10:21:52,094 | INFO | MemoryTrain:  epoch 8 | loss: 5.2664
+2024-05-25 10:22:22,086 | INFO | MemoryTrain:  epoch 9 | loss: 5.1184
+2024-05-25 10:23:52,277 | INFO | total acc: 75.71%   
+2024-05-25 10:27:26,135 | INFO | total acc: 77.64%   
+2024-05-25 10:28:01,460 | INFO | CurrentTrain:  epoch 0 | loss: 7.9809
+2024-05-25 10:28:24,439 | INFO | CurrentTrain:  epoch 1 | loss: 6.0099
+2024-05-25 10:28:47,404 | INFO | CurrentTrain:  epoch 2 | loss: 6.0828
+2024-05-25 10:29:10,365 | INFO | CurrentTrain:  epoch 3 | loss: 5.8258
+2024-05-25 10:29:33,345 | INFO | CurrentTrain:  epoch 4 | loss: 5.5247
+2024-05-25 10:29:56,294 | INFO | CurrentTrain:  epoch 5 | loss: 5.4481
+2024-05-25 10:30:19,261 | INFO | CurrentTrain:  epoch 6 | loss: 5.4492
+2024-05-25 10:30:42,220 | INFO | CurrentTrain:  epoch 7 | loss: 5.3733
+2024-05-25 10:31:05,189 | INFO | CurrentTrain:  epoch 8 | loss: 5.0117
+2024-05-25 10:31:28,154 | INFO | CurrentTrain:  epoch 9 | loss: 4.5249
+2024-05-25 10:33:12,702 | INFO | MemoryTrain:  epoch 0 | loss: 7.0042
+2024-05-25 10:33:56,514 | INFO | MemoryTrain:  epoch 1 | loss: 6.1953
+2024-05-25 10:34:40,250 | INFO | MemoryTrain:  epoch 2 | loss: 5.5639
+2024-05-25 10:35:23,906 | INFO | MemoryTrain:  epoch 3 | loss: 4.9417
+2024-05-25 10:36:07,516 | INFO | MemoryTrain:  epoch 4 | loss: 4.4387
+2024-05-25 10:36:51,258 | INFO | MemoryTrain:  epoch 5 | loss: 4.0994
+2024-05-25 10:37:34,996 | INFO | MemoryTrain:  epoch 6 | loss: 3.7129
+2024-05-25 10:38:18,724 | INFO | MemoryTrain:  epoch 7 | loss: 3.4018
+2024-05-25 10:39:02,447 | INFO | MemoryTrain:  epoch 8 | loss: 2.9589
+2024-05-25 10:39:46,148 | INFO | MemoryTrain:  epoch 9 | loss: 2.6448
+2024-05-25 10:40:34,515 | INFO | total acc: 78.65%   
+2024-05-25 10:44:51,405 | INFO | total acc: 68.19%   
+2024-05-25 10:45:26,651 | INFO | CurrentTrain:  epoch 0 | loss: 5.4831
+2024-05-25 10:45:49,581 | INFO | CurrentTrain:  epoch 1 | loss: 4.0247
+2024-05-25 10:46:12,501 | INFO | CurrentTrain:  epoch 2 | loss: 3.3327
+2024-05-25 10:46:35,429 | INFO | CurrentTrain:  epoch 3 | loss: 3.0354
+2024-05-25 10:46:58,339 | INFO | CurrentTrain:  epoch 4 | loss: 2.6189
+2024-05-25 10:47:21,262 | INFO | CurrentTrain:  epoch 5 | loss: 2.4822
+2024-05-25 10:47:44,195 | INFO | CurrentTrain:  epoch 6 | loss: 2.4239
+2024-05-25 10:48:07,130 | INFO | CurrentTrain:  epoch 7 | loss: 2.3896
+2024-05-25 10:48:30,041 | INFO | CurrentTrain:  epoch 8 | loss: 2.3668
+2024-05-25 10:48:52,984 | INFO | CurrentTrain:  epoch 9 | loss: 2.3529
+2024-05-25 10:51:02,064 | INFO | MemoryTrain:  epoch 0 | loss: 7.1974
+2024-05-25 10:51:59,661 | INFO | MemoryTrain:  epoch 1 | loss: 5.7288
+2024-05-25 10:52:57,208 | INFO | MemoryTrain:  epoch 2 | loss: 4.0886
+2024-05-25 10:53:54,720 | INFO | MemoryTrain:  epoch 3 | loss: 3.3312
+2024-05-25 10:54:52,209 | INFO | MemoryTrain:  epoch 4 | loss: 2.9266
+2024-05-25 10:55:49,662 | INFO | MemoryTrain:  epoch 5 | loss: 2.6902
+2024-05-25 10:56:47,145 | INFO | MemoryTrain:  epoch 6 | loss: 2.4755
+2024-05-25 10:57:44,590 | INFO | MemoryTrain:  epoch 7 | loss: 2.3054
+2024-05-25 10:58:42,068 | INFO | MemoryTrain:  epoch 8 | loss: 2.1607
+2024-05-25 10:59:39,565 | INFO | MemoryTrain:  epoch 9 | loss: 2.0677
+2024-05-25 11:00:41,224 | INFO | total acc: 81.53%   
+2024-05-25 11:06:04,783 | INFO | total acc: 67.22%   
+2024-05-25 11:06:41,731 | INFO | CurrentTrain:  epoch 0 | loss: 5.9531
+2024-05-25 11:07:05,623 | INFO | CurrentTrain:  epoch 1 | loss: 4.0135
+2024-05-25 11:07:29,467 | INFO | CurrentTrain:  epoch 2 | loss: 3.0286
+2024-05-25 11:07:53,291 | INFO | CurrentTrain:  epoch 3 | loss: 2.8307
+2024-05-25 11:08:17,104 | INFO | CurrentTrain:  epoch 4 | loss: 2.6505
+2024-05-25 11:08:40,909 | INFO | CurrentTrain:  epoch 5 | loss: 2.5337
+2024-05-25 11:09:04,663 | INFO | CurrentTrain:  epoch 6 | loss: 2.4631
+2024-05-25 11:09:28,407 | INFO | CurrentTrain:  epoch 7 | loss: 2.4202
+2024-05-25 11:09:52,153 | INFO | CurrentTrain:  epoch 8 | loss: 2.3834
+2024-05-25 11:10:15,914 | INFO | CurrentTrain:  epoch 9 | loss: 2.3615
+2024-05-25 11:12:47,482 | INFO | MemoryTrain:  epoch 0 | loss: 6.9845
+2024-05-25 11:13:59,805 | INFO | MemoryTrain:  epoch 1 | loss: 4.7969
+2024-05-25 11:15:12,714 | INFO | MemoryTrain:  epoch 2 | loss: 3.6396
+2024-05-25 11:16:25,480 | INFO | MemoryTrain:  epoch 3 | loss: 3.2162
+2024-05-25 11:17:37,435 | INFO | MemoryTrain:  epoch 4 | loss: 2.8947
+2024-05-25 11:18:49,057 | INFO | MemoryTrain:  epoch 5 | loss: 2.5654
+2024-05-25 11:20:00,597 | INFO | MemoryTrain:  epoch 6 | loss: 2.2745
+2024-05-25 11:21:11,930 | INFO | MemoryTrain:  epoch 7 | loss: 2.1526
+2024-05-25 11:22:23,588 | INFO | MemoryTrain:  epoch 8 | loss: 2.0509
+2024-05-25 11:23:35,110 | INFO | MemoryTrain:  epoch 9 | loss: 1.9921
+2024-05-25 11:24:42,421 | INFO | total acc: 82.92%   
+2024-05-25 11:30:51,589 | INFO | total acc: 63.51%   
+2024-05-25 11:31:26,767 | INFO | CurrentTrain:  epoch 0 | loss: 7.4286
+2024-05-25 11:31:49,666 | INFO | CurrentTrain:  epoch 1 | loss: 5.9090
+2024-05-25 11:32:12,560 | INFO | CurrentTrain:  epoch 2 | loss: 4.6457
+2024-05-25 11:32:35,451 | INFO | CurrentTrain:  epoch 3 | loss: 3.8574
+2024-05-25 11:32:58,376 | INFO | CurrentTrain:  epoch 4 | loss: 3.6486
+2024-05-25 11:33:21,266 | INFO | CurrentTrain:  epoch 5 | loss: 3.3010
+2024-05-25 11:33:44,153 | INFO | CurrentTrain:  epoch 6 | loss: 3.0466
+2024-05-25 11:34:07,068 | INFO | CurrentTrain:  epoch 7 | loss: 2.9062
+2024-05-25 11:34:29,957 | INFO | CurrentTrain:  epoch 8 | loss: 2.6857
+2024-05-25 11:34:52,856 | INFO | CurrentTrain:  epoch 9 | loss: 2.4992
+2024-05-25 11:37:37,754 | INFO | MemoryTrain:  epoch 0 | loss: 7.2551
+2024-05-25 11:39:02,432 | INFO | MemoryTrain:  epoch 1 | loss: 4.9703
+2024-05-25 11:40:27,059 | INFO | MemoryTrain:  epoch 2 | loss: 3.4523
+2024-05-25 11:41:51,683 | INFO | MemoryTrain:  epoch 3 | loss: 2.9058
+2024-05-25 11:43:16,248 | INFO | MemoryTrain:  epoch 4 | loss: 2.6153
+2024-05-25 11:44:40,803 | INFO | MemoryTrain:  epoch 5 | loss: 2.3510
+2024-05-25 11:46:05,363 | INFO | MemoryTrain:  epoch 6 | loss: 2.1325
+2024-05-25 11:47:29,897 | INFO | MemoryTrain:  epoch 7 | loss: 2.0294
+2024-05-25 11:48:54,493 | INFO | MemoryTrain:  epoch 8 | loss: 1.9900
+2024-05-25 11:50:19,124 | INFO | MemoryTrain:  epoch 9 | loss: 1.9385
+2024-05-25 11:51:37,173 | INFO | total acc: 71.07%   
+2024-05-25 11:58:55,451 | INFO | total acc: 54.80%   
+2024-05-25 11:59:30,742 | INFO | CurrentTrain:  epoch 0 | loss: 6.3198
+2024-05-25 11:59:53,701 | INFO | CurrentTrain:  epoch 1 | loss: 5.2098
+2024-05-25 12:00:16,656 | INFO | CurrentTrain:  epoch 2 | loss: 3.7368
+2024-05-25 12:00:39,612 | INFO | CurrentTrain:  epoch 3 | loss: 3.2444
+2024-05-25 12:01:02,690 | INFO | CurrentTrain:  epoch 4 | loss: 3.0103
+2024-05-25 12:01:25,861 | INFO | CurrentTrain:  epoch 5 | loss: 2.7552
+2024-05-25 12:01:49,026 | INFO | CurrentTrain:  epoch 6 | loss: 2.5728
+2024-05-25 12:02:12,130 | INFO | CurrentTrain:  epoch 7 | loss: 2.4772
+2024-05-25 12:02:35,194 | INFO | CurrentTrain:  epoch 8 | loss: 2.4168
+2024-05-25 12:02:58,220 | INFO | CurrentTrain:  epoch 9 | loss: 2.3847
+2024-05-25 12:06:10,676 | INFO | MemoryTrain:  epoch 0 | loss: 5.8118
+2024-05-25 12:07:52,537 | INFO | MemoryTrain:  epoch 1 | loss: 3.7032
+2024-05-25 12:09:35,533 | INFO | MemoryTrain:  epoch 2 | loss: 2.6883
+2024-05-25 12:11:18,281 | INFO | MemoryTrain:  epoch 3 | loss: 2.5042
+2024-05-25 12:13:00,402 | INFO | MemoryTrain:  epoch 4 | loss: 2.2558
+2024-05-25 12:14:42,227 | INFO | MemoryTrain:  epoch 5 | loss: 2.1147
+2024-05-25 12:16:24,013 | INFO | MemoryTrain:  epoch 6 | loss: 2.0105
+2024-05-25 12:18:05,822 | INFO | MemoryTrain:  epoch 7 | loss: 1.9673
+2024-05-25 12:19:47,882 | INFO | MemoryTrain:  epoch 8 | loss: 1.9315
+2024-05-25 12:21:29,869 | INFO | MemoryTrain:  epoch 9 | loss: 1.9006
+2024-05-25 12:22:18,977 | INFO | total acc: 83.33%   
+2024-05-25 12:30:30,513 | INFO | total acc: 58.62%   
+2024-05-25 12:31:04,183 | INFO | CurrentTrain:  epoch 0 | loss: 5.9791
+2024-05-25 12:31:26,062 | INFO | CurrentTrain:  epoch 1 | loss: 4.7218
+2024-05-25 12:31:47,910 | INFO | CurrentTrain:  epoch 2 | loss: 3.7834
+2024-05-25 12:32:09,817 | INFO | CurrentTrain:  epoch 3 | loss: 3.4304
+2024-05-25 12:32:31,660 | INFO | CurrentTrain:  epoch 4 | loss: 2.9073
+2024-05-25 12:32:53,514 | INFO | CurrentTrain:  epoch 5 | loss: 2.5765
+2024-05-25 12:33:15,360 | INFO | CurrentTrain:  epoch 6 | loss: 2.4406
+2024-05-25 12:33:37,222 | INFO | CurrentTrain:  epoch 7 | loss: 2.3722
+2024-05-25 12:33:59,057 | INFO | CurrentTrain:  epoch 8 | loss: 2.3338
+2024-05-25 12:34:20,900 | INFO | CurrentTrain:  epoch 9 | loss: 2.3032
+2024-05-25 12:37:53,447 | INFO | MemoryTrain:  epoch 0 | loss: 7.5365
+2024-05-25 12:39:49,385 | INFO | MemoryTrain:  epoch 1 | loss: 4.7483
+2024-05-25 12:41:45,737 | INFO | MemoryTrain:  epoch 2 | loss: 3.2686
+2024-05-25 12:43:41,721 | INFO | MemoryTrain:  epoch 3 | loss: 2.7858
+2024-05-25 12:45:37,528 | INFO | MemoryTrain:  epoch 4 | loss: 2.5201
+2024-05-25 12:47:33,607 | INFO | MemoryTrain:  epoch 5 | loss: 2.3188
+2024-05-25 12:49:29,815 | INFO | MemoryTrain:  epoch 6 | loss: 2.1038
+2024-05-25 12:51:25,870 | INFO | MemoryTrain:  epoch 7 | loss: 2.0143
+2024-05-25 12:53:21,463 | INFO | MemoryTrain:  epoch 8 | loss: 1.9342
+2024-05-25 12:55:16,478 | INFO | MemoryTrain:  epoch 9 | loss: 1.9009
+2024-05-25 12:56:15,401 | INFO | total acc: 89.13%   
+2024-05-25 13:04:54,583 | INFO | total acc: 59.71%   
+2024-05-25 13:04:59,143 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-25 13:12:07,895 | INFO | CurrentTrain:  epoch 0 | loss: 13.8130
+2024-05-25 13:16:42,649 | INFO | CurrentTrain:  epoch 1 | loss: 12.5696
+2024-05-25 13:21:17,357 | INFO | CurrentTrain:  epoch 2 | loss: 10.1433
+2024-05-25 13:25:52,119 | INFO | CurrentTrain:  epoch 3 | loss: 9.2246
+2024-05-25 13:30:27,625 | INFO | CurrentTrain:  epoch 4 | loss: 8.6020
+2024-05-25 13:35:02,350 | INFO | CurrentTrain:  epoch 5 | loss: 8.3774
+2024-05-25 13:39:37,123 | INFO | CurrentTrain:  epoch 6 | loss: 7.9969
+2024-05-25 13:44:11,859 | INFO | CurrentTrain:  epoch 7 | loss: 7.6778
+2024-05-25 13:48:46,517 | INFO | CurrentTrain:  epoch 8 | loss: 7.5936
+2024-05-25 13:53:21,214 | INFO | CurrentTrain:  epoch 9 | loss: 7.4441
+2024-05-25 13:58:28,827 | INFO | total acc: 87.07%   
+2024-05-25 14:00:35,821 | INFO | total acc: 87.07%   
+2024-05-25 14:01:11,126 | INFO | CurrentTrain:  epoch 0 | loss: 9.5456
+2024-05-25 14:01:34,086 | INFO | CurrentTrain:  epoch 1 | loss: 6.7311
+2024-05-25 14:01:57,024 | INFO | CurrentTrain:  epoch 2 | loss: 7.5649
+2024-05-25 14:02:19,971 | INFO | CurrentTrain:  epoch 3 | loss: 7.3368
+2024-05-25 14:02:42,910 | INFO | CurrentTrain:  epoch 4 | loss: 7.4928
+2024-05-25 14:03:05,846 | INFO | CurrentTrain:  epoch 5 | loss: 7.7982
+2024-05-25 14:03:28,783 | INFO | CurrentTrain:  epoch 6 | loss: 8.3076
+2024-05-25 14:03:51,740 | INFO | CurrentTrain:  epoch 7 | loss: 8.0018
+2024-05-25 14:04:14,689 | INFO | CurrentTrain:  epoch 8 | loss: 7.5152
+2024-05-25 14:04:37,666 | INFO | CurrentTrain:  epoch 9 | loss: 7.4131
+2024-05-25 14:06:03,208 | INFO | MemoryTrain:  epoch 0 | loss: 7.3388
+2024-05-25 14:06:33,321 | INFO | MemoryTrain:  epoch 1 | loss: 5.9936
+2024-05-25 14:07:03,476 | INFO | MemoryTrain:  epoch 2 | loss: 5.4554
+2024-05-25 14:07:33,626 | INFO | MemoryTrain:  epoch 3 | loss: 5.3696
+2024-05-25 14:08:03,775 | INFO | MemoryTrain:  epoch 4 | loss: 5.2911
+2024-05-25 14:08:33,879 | INFO | MemoryTrain:  epoch 5 | loss: 5.3341
+2024-05-25 14:09:03,998 | INFO | MemoryTrain:  epoch 6 | loss: 5.3684
+2024-05-25 14:09:34,097 | INFO | MemoryTrain:  epoch 7 | loss: 5.1542
+2024-05-25 14:10:04,153 | INFO | MemoryTrain:  epoch 8 | loss: 5.0508
+2024-05-25 14:10:34,217 | INFO | MemoryTrain:  epoch 9 | loss: 4.7424
+2024-05-25 14:11:14,354 | INFO | total acc: 94.67%   
+2024-05-25 14:14:00,067 | INFO | total acc: 88.17%   
+2024-05-25 14:14:36,327 | INFO | CurrentTrain:  epoch 0 | loss: 8.4993
+2024-05-25 14:15:00,044 | INFO | CurrentTrain:  epoch 1 | loss: 7.7005
+2024-05-25 14:15:23,838 | INFO | CurrentTrain:  epoch 2 | loss: 6.2931
+2024-05-25 14:15:47,776 | INFO | CurrentTrain:  epoch 3 | loss: 5.5598
+2024-05-25 14:16:11,697 | INFO | CurrentTrain:  epoch 4 | loss: 5.2821
+2024-05-25 14:16:35,690 | INFO | CurrentTrain:  epoch 5 | loss: 5.1497
+2024-05-25 14:16:59,650 | INFO | CurrentTrain:  epoch 6 | loss: 4.8069
+2024-05-25 14:17:23,689 | INFO | CurrentTrain:  epoch 7 | loss: 4.7728
+2024-05-25 14:17:47,686 | INFO | CurrentTrain:  epoch 8 | loss: 4.4612
+2024-05-25 14:18:11,631 | INFO | CurrentTrain:  epoch 9 | loss: 3.9244
+2024-05-25 14:19:57,029 | INFO | MemoryTrain:  epoch 0 | loss: 6.0942
+2024-05-25 14:20:41,908 | INFO | MemoryTrain:  epoch 1 | loss: 5.3817
+2024-05-25 14:21:26,894 | INFO | MemoryTrain:  epoch 2 | loss: 4.7692
+2024-05-25 14:22:11,961 | INFO | MemoryTrain:  epoch 3 | loss: 4.3218
+2024-05-25 14:22:57,162 | INFO | MemoryTrain:  epoch 4 | loss: 3.9490
+2024-05-25 14:23:42,359 | INFO | MemoryTrain:  epoch 5 | loss: 3.4931
+2024-05-25 14:24:27,609 | INFO | MemoryTrain:  epoch 6 | loss: 3.1533
+2024-05-25 14:25:12,876 | INFO | MemoryTrain:  epoch 7 | loss: 2.9074
+2024-05-25 14:25:58,097 | INFO | MemoryTrain:  epoch 8 | loss: 2.7312
+2024-05-25 14:26:43,401 | INFO | MemoryTrain:  epoch 9 | loss: 2.5003
+2024-05-25 14:28:18,254 | INFO | total acc: 82.20%   
+2024-05-25 14:32:36,850 | INFO | total acc: 82.88%   
+2024-05-25 14:33:10,421 | INFO | CurrentTrain:  epoch 0 | loss: 6.6085
+2024-05-25 14:33:32,254 | INFO | CurrentTrain:  epoch 1 | loss: 5.4209
+2024-05-25 14:33:54,104 | INFO | CurrentTrain:  epoch 2 | loss: 4.7801
+2024-05-25 14:34:15,863 | INFO | CurrentTrain:  epoch 3 | loss: 4.2979
+2024-05-25 14:34:37,727 | INFO | CurrentTrain:  epoch 4 | loss: 3.8556
+2024-05-25 14:34:59,537 | INFO | CurrentTrain:  epoch 5 | loss: 3.4951
+2024-05-25 14:35:21,371 | INFO | CurrentTrain:  epoch 6 | loss: 3.1763
+2024-05-25 14:35:43,166 | INFO | CurrentTrain:  epoch 7 | loss: 2.8756
+2024-05-25 14:36:04,944 | INFO | CurrentTrain:  epoch 8 | loss: 2.6520
+2024-05-25 14:36:26,777 | INFO | CurrentTrain:  epoch 9 | loss: 2.5231
+2024-05-25 14:38:33,420 | INFO | MemoryTrain:  epoch 0 | loss: 5.9467
+2024-05-25 14:39:32,355 | INFO | MemoryTrain:  epoch 1 | loss: 4.2887
+2024-05-25 14:40:31,425 | INFO | MemoryTrain:  epoch 2 | loss: 3.4727
+2024-05-25 14:41:30,669 | INFO | MemoryTrain:  epoch 3 | loss: 3.0982
+2024-05-25 14:42:29,949 | INFO | MemoryTrain:  epoch 4 | loss: 2.8355
+2024-05-25 14:43:29,310 | INFO | MemoryTrain:  epoch 5 | loss: 2.7658
+2024-05-25 14:44:28,702 | INFO | MemoryTrain:  epoch 6 | loss: 2.5515
+2024-05-25 14:45:28,043 | INFO | MemoryTrain:  epoch 7 | loss: 2.2850
+2024-05-25 14:46:27,416 | INFO | MemoryTrain:  epoch 8 | loss: 2.1834
+2024-05-25 14:47:26,765 | INFO | MemoryTrain:  epoch 9 | loss: 2.0772
+2024-05-25 14:48:20,252 | INFO | total acc: 86.41%   
+2024-05-25 14:53:25,290 | INFO | total acc: 81.34%   
+2024-05-25 14:54:01,799 | INFO | CurrentTrain:  epoch 0 | loss: 5.3562
+2024-05-25 14:54:25,521 | INFO | CurrentTrain:  epoch 1 | loss: 3.9130
+2024-05-25 14:54:49,272 | INFO | CurrentTrain:  epoch 2 | loss: 3.1883
+2024-05-25 14:55:13,009 | INFO | CurrentTrain:  epoch 3 | loss: 2.8197
+2024-05-25 14:55:36,745 | INFO | CurrentTrain:  epoch 4 | loss: 2.5814
+2024-05-25 14:56:00,528 | INFO | CurrentTrain:  epoch 5 | loss: 2.4876
+2024-05-25 14:56:24,179 | INFO | CurrentTrain:  epoch 6 | loss: 2.4211
+2024-05-25 14:56:47,728 | INFO | CurrentTrain:  epoch 7 | loss: 2.3762
+2024-05-25 14:57:11,136 | INFO | CurrentTrain:  epoch 8 | loss: 2.3564
+2024-05-25 14:57:34,397 | INFO | CurrentTrain:  epoch 9 | loss: 2.3463
+2024-05-25 15:00:05,252 | INFO | MemoryTrain:  epoch 0 | loss: 7.0321
+2024-05-25 15:01:16,377 | INFO | MemoryTrain:  epoch 1 | loss: 4.9886
+2024-05-25 15:02:27,379 | INFO | MemoryTrain:  epoch 2 | loss: 3.6749
+2024-05-25 15:03:38,333 | INFO | MemoryTrain:  epoch 3 | loss: 3.1507
+2024-05-25 15:04:49,258 | INFO | MemoryTrain:  epoch 4 | loss: 2.8642
+2024-05-25 15:06:00,211 | INFO | MemoryTrain:  epoch 5 | loss: 2.5540
+2024-05-25 15:07:11,281 | INFO | MemoryTrain:  epoch 6 | loss: 2.3666
+2024-05-25 15:08:22,205 | INFO | MemoryTrain:  epoch 7 | loss: 2.2469
+2024-05-25 15:09:33,115 | INFO | MemoryTrain:  epoch 8 | loss: 2.1368
+2024-05-25 15:10:44,033 | INFO | MemoryTrain:  epoch 9 | loss: 2.0724
+2024-05-25 15:11:50,999 | INFO | total acc: 39.58%   
+2024-05-25 15:17:44,716 | INFO | total acc: 69.67%   
+2024-05-25 15:18:20,033 | INFO | CurrentTrain:  epoch 0 | loss: 5.8038
+2024-05-25 15:18:42,999 | INFO | CurrentTrain:  epoch 1 | loss: 4.3447
+2024-05-25 15:19:05,980 | INFO | CurrentTrain:  epoch 2 | loss: 3.3694
+2024-05-25 15:19:28,943 | INFO | CurrentTrain:  epoch 3 | loss: 2.9543
+2024-05-25 15:19:51,897 | INFO | CurrentTrain:  epoch 4 | loss: 2.6129
+2024-05-25 15:20:14,848 | INFO | CurrentTrain:  epoch 5 | loss: 2.4686
+2024-05-25 15:20:37,806 | INFO | CurrentTrain:  epoch 6 | loss: 2.4075
+2024-05-25 15:21:00,782 | INFO | CurrentTrain:  epoch 7 | loss: 2.3800
+2024-05-25 15:21:23,723 | INFO | CurrentTrain:  epoch 8 | loss: 2.3633
+2024-05-25 15:21:46,675 | INFO | CurrentTrain:  epoch 9 | loss: 2.3522
+2024-05-25 15:24:35,583 | INFO | MemoryTrain:  epoch 0 | loss: 6.4288
+2024-05-25 15:26:02,698 | INFO | MemoryTrain:  epoch 1 | loss: 4.2615
+2024-05-25 15:27:30,569 | INFO | MemoryTrain:  epoch 2 | loss: 3.0339
+2024-05-25 15:28:56,670 | INFO | MemoryTrain:  epoch 3 | loss: 2.8892
+2024-05-25 15:30:23,051 | INFO | MemoryTrain:  epoch 4 | loss: 2.9102
+2024-05-25 15:31:49,415 | INFO | MemoryTrain:  epoch 5 | loss: 2.8463
+2024-05-25 15:33:16,034 | INFO | MemoryTrain:  epoch 6 | loss: 2.5565
+2024-05-25 15:34:41,380 | INFO | MemoryTrain:  epoch 7 | loss: 2.4643
+2024-05-25 15:36:06,127 | INFO | MemoryTrain:  epoch 8 | loss: 2.3473
+2024-05-25 15:37:30,991 | INFO | MemoryTrain:  epoch 9 | loss: 2.1994
+2024-05-25 15:38:24,438 | INFO | total acc: 61.24%   
+2024-05-25 15:45:01,595 | INFO | total acc: 59.56%   
+2024-05-25 15:45:36,882 | INFO | CurrentTrain:  epoch 0 | loss: 5.3705
+2024-05-25 15:45:59,832 | INFO | CurrentTrain:  epoch 1 | loss: 3.9761
+2024-05-25 15:46:22,781 | INFO | CurrentTrain:  epoch 2 | loss: 2.9758
+2024-05-25 15:46:45,749 | INFO | CurrentTrain:  epoch 3 | loss: 2.6784
+2024-05-25 15:47:08,686 | INFO | CurrentTrain:  epoch 4 | loss: 2.5249
+2024-05-25 15:47:31,638 | INFO | CurrentTrain:  epoch 5 | loss: 2.4520
+2024-05-25 15:47:54,575 | INFO | CurrentTrain:  epoch 6 | loss: 2.4006
+2024-05-25 15:48:17,534 | INFO | CurrentTrain:  epoch 7 | loss: 2.3777
+2024-05-25 15:48:40,493 | INFO | CurrentTrain:  epoch 8 | loss: 2.3637
+2024-05-25 15:49:03,450 | INFO | CurrentTrain:  epoch 9 | loss: 2.3457
+2024-05-25 15:52:11,008 | INFO | MemoryTrain:  epoch 0 | loss: 6.2687
+2024-05-25 15:53:49,321 | INFO | MemoryTrain:  epoch 1 | loss: 3.7443
+2024-05-25 15:55:27,664 | INFO | MemoryTrain:  epoch 2 | loss: 2.5980
+2024-05-25 15:57:06,009 | INFO | MemoryTrain:  epoch 3 | loss: 2.3235
+2024-05-25 15:58:44,275 | INFO | MemoryTrain:  epoch 4 | loss: 2.2073
+2024-05-25 16:00:22,496 | INFO | MemoryTrain:  epoch 5 | loss: 2.0622
+2024-05-25 16:02:01,062 | INFO | MemoryTrain:  epoch 6 | loss: 1.9961
+2024-05-25 16:03:39,590 | INFO | MemoryTrain:  epoch 7 | loss: 1.9347
+2024-05-25 16:05:18,128 | INFO | MemoryTrain:  epoch 8 | loss: 1.8984
+2024-05-25 16:06:56,669 | INFO | MemoryTrain:  epoch 9 | loss: 1.8767
+2024-05-25 16:08:03,950 | INFO | total acc: 89.64%   
+2024-05-25 16:15:38,424 | INFO | total acc: 60.79%   
+2024-05-25 16:16:13,804 | INFO | CurrentTrain:  epoch 0 | loss: 8.4989
+2024-05-25 16:16:36,811 | INFO | CurrentTrain:  epoch 1 | loss: 6.9572
+2024-05-25 16:16:59,814 | INFO | CurrentTrain:  epoch 2 | loss: 6.0678
+2024-05-25 16:17:22,808 | INFO | CurrentTrain:  epoch 3 | loss: 5.4291
+2024-05-25 16:17:45,791 | INFO | CurrentTrain:  epoch 4 | loss: 4.8723
+2024-05-25 16:18:08,793 | INFO | CurrentTrain:  epoch 5 | loss: 4.4563
+2024-05-25 16:18:31,779 | INFO | CurrentTrain:  epoch 6 | loss: 4.1299
+2024-05-25 16:18:54,760 | INFO | CurrentTrain:  epoch 7 | loss: 3.7147
+2024-05-25 16:19:17,767 | INFO | CurrentTrain:  epoch 8 | loss: 3.3699
+2024-05-25 16:19:40,750 | INFO | CurrentTrain:  epoch 9 | loss: 3.0688
+2024-05-25 16:23:08,864 | INFO | MemoryTrain:  epoch 0 | loss: 5.6612
+2024-05-25 16:25:00,786 | INFO | MemoryTrain:  epoch 1 | loss: 3.6918
+2024-05-25 16:26:52,979 | INFO | MemoryTrain:  epoch 2 | loss: 2.6871
+2024-05-25 16:28:45,157 | INFO | MemoryTrain:  epoch 3 | loss: 2.3585
+2024-05-25 16:30:37,367 | INFO | MemoryTrain:  epoch 4 | loss: 2.1569
+2024-05-25 16:32:29,696 | INFO | MemoryTrain:  epoch 5 | loss: 2.0113
+2024-05-25 16:34:22,207 | INFO | MemoryTrain:  epoch 6 | loss: 1.9292
+2024-05-25 16:36:15,024 | INFO | MemoryTrain:  epoch 7 | loss: 1.9084
+2024-05-25 16:38:07,431 | INFO | MemoryTrain:  epoch 8 | loss: 1.8788
+2024-05-25 16:39:59,597 | INFO | MemoryTrain:  epoch 9 | loss: 1.8647
+2024-05-25 16:41:23,395 | INFO | total acc: 64.29%   
+2024-05-25 16:50:11,206 | INFO | total acc: 64.51%   
+2024-05-25 16:50:16,750 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-25 16:57:25,503 | INFO | CurrentTrain:  epoch 0 | loss: 13.7330
+2024-05-25 17:02:00,461 | INFO | CurrentTrain:  epoch 1 | loss: 12.3276
+2024-05-25 17:06:35,274 | INFO | CurrentTrain:  epoch 2 | loss: 10.0714
+2024-05-25 17:11:10,050 | INFO | CurrentTrain:  epoch 3 | loss: 9.3750
+2024-05-25 17:15:44,728 | INFO | CurrentTrain:  epoch 4 | loss: 8.6645
+2024-05-25 17:20:19,568 | INFO | CurrentTrain:  epoch 5 | loss: 8.3169
+2024-05-25 17:24:54,574 | INFO | CurrentTrain:  epoch 6 | loss: 7.9530
+2024-05-25 17:29:29,547 | INFO | CurrentTrain:  epoch 7 | loss: 7.7454
+2024-05-25 17:34:04,726 | INFO | CurrentTrain:  epoch 8 | loss: 7.6890
+2024-05-25 17:38:39,494 | INFO | CurrentTrain:  epoch 9 | loss: 7.3904
+2024-05-25 17:43:42,475 | INFO | total acc: 87.07%   
+2024-05-25 17:45:49,551 | INFO | total acc: 87.07%   
+2024-05-25 17:46:22,116 | INFO | CurrentTrain:  epoch 0 | loss: 9.5072
+2024-05-25 17:46:43,278 | INFO | CurrentTrain:  epoch 1 | loss: 7.6158
+2024-05-25 17:47:04,420 | INFO | CurrentTrain:  epoch 2 | loss: 7.4135
+2024-05-25 17:47:25,554 | INFO | CurrentTrain:  epoch 3 | loss: 7.5702
+2024-05-25 17:47:46,695 | INFO | CurrentTrain:  epoch 4 | loss: 7.1963
+2024-05-25 17:48:07,846 | INFO | CurrentTrain:  epoch 5 | loss: 6.6982
+2024-05-25 17:48:28,986 | INFO | CurrentTrain:  epoch 6 | loss: 6.6210
+2024-05-25 17:48:50,130 | INFO | CurrentTrain:  epoch 7 | loss: 6.4219
+2024-05-25 17:49:11,266 | INFO | CurrentTrain:  epoch 8 | loss: 6.4273
+2024-05-25 17:49:32,405 | INFO | CurrentTrain:  epoch 9 | loss: 6.6976
+2024-05-25 17:50:54,977 | INFO | MemoryTrain:  epoch 0 | loss: 7.1044
+2024-05-25 17:51:25,154 | INFO | MemoryTrain:  epoch 1 | loss: 6.2829
+2024-05-25 17:51:55,317 | INFO | MemoryTrain:  epoch 2 | loss: 5.6008
+2024-05-25 17:52:25,458 | INFO | MemoryTrain:  epoch 3 | loss: 5.5379
+2024-05-25 17:52:55,566 | INFO | MemoryTrain:  epoch 4 | loss: 5.4578
+2024-05-25 17:53:25,648 | INFO | MemoryTrain:  epoch 5 | loss: 5.3020
+2024-05-25 17:53:55,743 | INFO | MemoryTrain:  epoch 6 | loss: 5.4850
+2024-05-25 17:54:25,820 | INFO | MemoryTrain:  epoch 7 | loss: 5.2137
+2024-05-25 17:54:55,895 | INFO | MemoryTrain:  epoch 8 | loss: 4.6849
+2024-05-25 17:55:25,954 | INFO | MemoryTrain:  epoch 9 | loss: 4.7765
+2024-05-25 17:56:14,770 | INFO | total acc: 89.13%   
+2024-05-25 17:59:07,067 | INFO | total acc: 74.93%   
+2024-05-25 17:59:42,395 | INFO | CurrentTrain:  epoch 0 | loss: 8.6273
+2024-05-25 18:00:05,361 | INFO | CurrentTrain:  epoch 1 | loss: 7.3509
+2024-05-25 18:00:28,313 | INFO | CurrentTrain:  epoch 2 | loss: 7.1096
+2024-05-25 18:00:51,278 | INFO | CurrentTrain:  epoch 3 | loss: 6.4138
+2024-05-25 18:01:14,239 | INFO | CurrentTrain:  epoch 4 | loss: 5.8222
+2024-05-25 18:01:37,197 | INFO | CurrentTrain:  epoch 5 | loss: 6.1226
+2024-05-25 18:02:00,166 | INFO | CurrentTrain:  epoch 6 | loss: 6.0021
+2024-05-25 18:02:23,145 | INFO | CurrentTrain:  epoch 7 | loss: 5.5812
+2024-05-25 18:02:46,097 | INFO | CurrentTrain:  epoch 8 | loss: 4.7824
+2024-05-25 18:03:09,085 | INFO | CurrentTrain:  epoch 9 | loss: 4.5783
+2024-05-25 18:04:52,201 | INFO | MemoryTrain:  epoch 0 | loss: 6.7686
+2024-05-25 18:05:36,073 | INFO | MemoryTrain:  epoch 1 | loss: 5.6106
+2024-05-25 18:06:19,957 | INFO | MemoryTrain:  epoch 2 | loss: 4.9817
+2024-05-25 18:07:03,827 | INFO | MemoryTrain:  epoch 3 | loss: 5.0229
+2024-05-25 18:07:47,667 | INFO | MemoryTrain:  epoch 4 | loss: 4.7697
+2024-05-25 18:08:31,498 | INFO | MemoryTrain:  epoch 5 | loss: 4.5627
+2024-05-25 18:09:15,304 | INFO | MemoryTrain:  epoch 6 | loss: 4.3010
+2024-05-25 18:09:59,088 | INFO | MemoryTrain:  epoch 7 | loss: 3.8487
+2024-05-25 18:10:42,878 | INFO | MemoryTrain:  epoch 8 | loss: 3.6444
+2024-05-25 18:11:26,651 | INFO | MemoryTrain:  epoch 9 | loss: 3.4095
+2024-05-25 18:12:58,707 | INFO | total acc: 85.31%   
+2024-05-25 18:17:17,650 | INFO | total acc: 79.55%   
+2024-05-25 18:17:52,978 | INFO | CurrentTrain:  epoch 0 | loss: 7.4673
+2024-05-25 18:18:15,964 | INFO | CurrentTrain:  epoch 1 | loss: 5.8479
+2024-05-25 18:18:38,943 | INFO | CurrentTrain:  epoch 2 | loss: 5.0527
+2024-05-25 18:19:01,907 | INFO | CurrentTrain:  epoch 3 | loss: 4.5840
+2024-05-25 18:19:24,859 | INFO | CurrentTrain:  epoch 4 | loss: 4.1269
+2024-05-25 18:19:47,821 | INFO | CurrentTrain:  epoch 5 | loss: 3.7025
+2024-05-25 18:20:10,796 | INFO | CurrentTrain:  epoch 6 | loss: 3.1547
+2024-05-25 18:20:33,778 | INFO | CurrentTrain:  epoch 7 | loss: 2.8167
+2024-05-25 18:20:56,739 | INFO | CurrentTrain:  epoch 8 | loss: 2.7553
+2024-05-25 18:21:19,717 | INFO | CurrentTrain:  epoch 9 | loss: 2.6523
+2024-05-25 18:23:24,942 | INFO | MemoryTrain:  epoch 0 | loss: 7.5441
+2024-05-25 18:24:22,409 | INFO | MemoryTrain:  epoch 1 | loss: 6.2135
+2024-05-25 18:25:19,845 | INFO | MemoryTrain:  epoch 2 | loss: 5.2672
+2024-05-25 18:26:17,263 | INFO | MemoryTrain:  epoch 3 | loss: 4.8367
+2024-05-25 18:27:14,732 | INFO | MemoryTrain:  epoch 4 | loss: 4.3548
+2024-05-25 18:28:12,175 | INFO | MemoryTrain:  epoch 5 | loss: 4.0127
+2024-05-25 18:29:09,672 | INFO | MemoryTrain:  epoch 6 | loss: 3.6430
+2024-05-25 18:30:07,460 | INFO | MemoryTrain:  epoch 7 | loss: 3.2560
+2024-05-25 18:31:05,109 | INFO | MemoryTrain:  epoch 8 | loss: 2.9810
+2024-05-25 18:32:02,808 | INFO | MemoryTrain:  epoch 9 | loss: 2.7610
+2024-05-25 18:33:18,601 | INFO | total acc: 78.21%   
+2024-05-25 18:38:45,744 | INFO | total acc: 66.39%   
+2024-05-25 18:39:21,510 | INFO | CurrentTrain:  epoch 0 | loss: 5.9990
+2024-05-25 18:39:44,701 | INFO | CurrentTrain:  epoch 1 | loss: 4.2539
+2024-05-25 18:40:07,822 | INFO | CurrentTrain:  epoch 2 | loss: 3.1807
+2024-05-25 18:40:30,873 | INFO | CurrentTrain:  epoch 3 | loss: 2.7804
+2024-05-25 18:40:53,894 | INFO | CurrentTrain:  epoch 4 | loss: 2.5500
+2024-05-25 18:41:16,861 | INFO | CurrentTrain:  epoch 5 | loss: 2.4543
+2024-05-25 18:41:39,824 | INFO | CurrentTrain:  epoch 6 | loss: 2.4077
+2024-05-25 18:42:02,775 | INFO | CurrentTrain:  epoch 7 | loss: 2.3715
+2024-05-25 18:42:25,687 | INFO | CurrentTrain:  epoch 8 | loss: 2.3510
+2024-05-25 18:42:48,595 | INFO | CurrentTrain:  epoch 9 | loss: 2.3437
+2024-05-25 18:45:11,817 | INFO | MemoryTrain:  epoch 0 | loss: 7.5802
+2024-05-25 18:46:23,045 | INFO | MemoryTrain:  epoch 1 | loss: 5.0916
+2024-05-25 18:47:34,223 | INFO | MemoryTrain:  epoch 2 | loss: 3.4893
+2024-05-25 18:48:45,371 | INFO | MemoryTrain:  epoch 3 | loss: 3.0351
+2024-05-25 18:49:56,486 | INFO | MemoryTrain:  epoch 4 | loss: 2.9127
+2024-05-25 18:51:07,617 | INFO | MemoryTrain:  epoch 5 | loss: 2.5779
+2024-05-25 18:52:18,732 | INFO | MemoryTrain:  epoch 6 | loss: 2.3280
+2024-05-25 18:53:29,836 | INFO | MemoryTrain:  epoch 7 | loss: 2.1849
+2024-05-25 18:54:40,965 | INFO | MemoryTrain:  epoch 8 | loss: 2.1118
+2024-05-25 18:55:52,059 | INFO | MemoryTrain:  epoch 9 | loss: 2.0409
+2024-05-25 18:56:55,031 | INFO | total acc: 86.94%   
+2024-05-25 19:03:16,564 | INFO | total acc: 61.17%   
+2024-05-25 19:03:51,859 | INFO | CurrentTrain:  epoch 0 | loss: 5.1582
+2024-05-25 19:04:14,825 | INFO | CurrentTrain:  epoch 1 | loss: 4.1600
+2024-05-25 19:04:37,770 | INFO | CurrentTrain:  epoch 2 | loss: 3.3466
+2024-05-25 19:05:00,719 | INFO | CurrentTrain:  epoch 3 | loss: 2.8558
+2024-05-25 19:05:23,653 | INFO | CurrentTrain:  epoch 4 | loss: 2.6426
+2024-05-25 19:05:46,609 | INFO | CurrentTrain:  epoch 5 | loss: 2.5140
+2024-05-25 19:06:09,552 | INFO | CurrentTrain:  epoch 6 | loss: 2.4413
+2024-05-25 19:06:32,504 | INFO | CurrentTrain:  epoch 7 | loss: 2.4026
+2024-05-25 19:06:55,452 | INFO | CurrentTrain:  epoch 8 | loss: 2.3786
+2024-05-25 19:07:18,395 | INFO | CurrentTrain:  epoch 9 | loss: 2.3635
+2024-05-25 19:10:07,312 | INFO | MemoryTrain:  epoch 0 | loss: 5.4522
+2024-05-25 19:11:31,955 | INFO | MemoryTrain:  epoch 1 | loss: 3.3368
+2024-05-25 19:12:56,518 | INFO | MemoryTrain:  epoch 2 | loss: 2.5543
+2024-05-25 19:14:21,085 | INFO | MemoryTrain:  epoch 3 | loss: 2.3072
+2024-05-25 19:15:45,580 | INFO | MemoryTrain:  epoch 4 | loss: 2.1539
+2024-05-25 19:17:10,046 | INFO | MemoryTrain:  epoch 5 | loss: 2.0744
+2024-05-25 19:18:34,753 | INFO | MemoryTrain:  epoch 6 | loss: 2.0057
+2024-05-25 19:19:59,238 | INFO | MemoryTrain:  epoch 7 | loss: 1.9717
+2024-05-25 19:21:23,705 | INFO | MemoryTrain:  epoch 8 | loss: 1.9483
+2024-05-25 19:22:48,201 | INFO | MemoryTrain:  epoch 9 | loss: 1.9275
+2024-05-25 19:23:34,905 | INFO | total acc: 85.33%   
+2024-05-25 19:30:33,196 | INFO | total acc: 66.00%   
+2024-05-25 19:31:08,497 | INFO | CurrentTrain:  epoch 0 | loss: 4.9220
+2024-05-25 19:31:31,492 | INFO | CurrentTrain:  epoch 1 | loss: 3.7645
+2024-05-25 19:31:54,463 | INFO | CurrentTrain:  epoch 2 | loss: 3.0420
+2024-05-25 19:32:17,460 | INFO | CurrentTrain:  epoch 3 | loss: 2.8412
+2024-05-25 19:32:40,433 | INFO | CurrentTrain:  epoch 4 | loss: 2.6841
+2024-05-25 19:33:03,434 | INFO | CurrentTrain:  epoch 5 | loss: 2.5465
+2024-05-25 19:33:26,423 | INFO | CurrentTrain:  epoch 6 | loss: 2.4267
+2024-05-25 19:33:49,412 | INFO | CurrentTrain:  epoch 7 | loss: 2.3699
+2024-05-25 19:34:12,382 | INFO | CurrentTrain:  epoch 8 | loss: 2.3401
+2024-05-25 19:34:35,364 | INFO | CurrentTrain:  epoch 9 | loss: 2.3329
+2024-05-25 19:37:44,039 | INFO | MemoryTrain:  epoch 0 | loss: 6.7138
+2024-05-25 19:39:22,330 | INFO | MemoryTrain:  epoch 1 | loss: 4.1185
+2024-05-25 19:41:00,540 | INFO | MemoryTrain:  epoch 2 | loss: 2.9864
+2024-05-25 19:42:38,748 | INFO | MemoryTrain:  epoch 3 | loss: 2.7650
+2024-05-25 19:44:17,298 | INFO | MemoryTrain:  epoch 4 | loss: 2.6317
+2024-05-25 19:45:55,862 | INFO | MemoryTrain:  epoch 5 | loss: 2.5145
+2024-05-25 19:47:34,415 | INFO | MemoryTrain:  epoch 6 | loss: 2.4519
+2024-05-25 19:49:12,920 | INFO | MemoryTrain:  epoch 7 | loss: 2.3038
+2024-05-25 19:50:52,678 | INFO | MemoryTrain:  epoch 8 | loss: 2.3571
+2024-05-25 19:52:31,167 | INFO | MemoryTrain:  epoch 9 | loss: 2.2887
+2024-05-25 19:53:26,343 | INFO | total acc: 64.04%   
+2024-05-25 20:01:07,429 | INFO | total acc: 63.85%   
+2024-05-25 20:01:42,735 | INFO | CurrentTrain:  epoch 0 | loss: 5.3660
+2024-05-25 20:02:05,696 | INFO | CurrentTrain:  epoch 1 | loss: 4.1181
+2024-05-25 20:02:28,667 | INFO | CurrentTrain:  epoch 2 | loss: 3.6138
+2024-05-25 20:02:51,640 | INFO | CurrentTrain:  epoch 3 | loss: 3.0614
+2024-05-25 20:03:14,597 | INFO | CurrentTrain:  epoch 4 | loss: 2.8549
+2024-05-25 20:03:37,575 | INFO | CurrentTrain:  epoch 5 | loss: 2.5498
+2024-05-25 20:04:00,539 | INFO | CurrentTrain:  epoch 6 | loss: 2.4722
+2024-05-25 20:04:23,500 | INFO | CurrentTrain:  epoch 7 | loss: 2.4266
+2024-05-25 20:04:46,466 | INFO | CurrentTrain:  epoch 8 | loss: 2.3909
+2024-05-25 20:05:09,446 | INFO | CurrentTrain:  epoch 9 | loss: 2.3733
+2024-05-25 20:08:40,050 | INFO | MemoryTrain:  epoch 0 | loss: 5.6868
+2024-05-25 20:10:32,688 | INFO | MemoryTrain:  epoch 1 | loss: 3.6464
+2024-05-25 20:12:24,623 | INFO | MemoryTrain:  epoch 2 | loss: 2.7530
+2024-05-25 20:14:16,482 | INFO | MemoryTrain:  epoch 3 | loss: 2.5679
+2024-05-25 20:16:08,276 | INFO | MemoryTrain:  epoch 4 | loss: 2.3343
+2024-05-25 20:18:00,087 | INFO | MemoryTrain:  epoch 5 | loss: 2.1765
+2024-05-25 20:19:51,913 | INFO | MemoryTrain:  epoch 6 | loss: 2.1000
+2024-05-25 20:21:44,386 | INFO | MemoryTrain:  epoch 7 | loss: 1.9873
+2024-05-25 20:23:36,755 | INFO | MemoryTrain:  epoch 8 | loss: 1.9221
+2024-05-25 20:25:28,712 | INFO | MemoryTrain:  epoch 9 | loss: 1.8863
+2024-05-25 20:26:40,865 | INFO | total acc: 75.83%   
+2024-05-25 20:35:21,257 | INFO | total acc: 62.06%   
+2024-05-25 20:35:26,411 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-25 20:42:34,529 | INFO | CurrentTrain:  epoch 0 | loss: 13.6715
+2024-05-25 20:47:08,671 | INFO | CurrentTrain:  epoch 1 | loss: 12.0277
+2024-05-25 20:51:42,819 | INFO | CurrentTrain:  epoch 2 | loss: 9.9931
+2024-05-25 20:56:16,797 | INFO | CurrentTrain:  epoch 3 | loss: 9.2159
+2024-05-25 21:00:50,774 | INFO | CurrentTrain:  epoch 4 | loss: 8.5916
+2024-05-25 21:05:24,786 | INFO | CurrentTrain:  epoch 5 | loss: 8.1864
+2024-05-25 21:09:58,711 | INFO | CurrentTrain:  epoch 6 | loss: 7.9561
+2024-05-25 21:14:32,818 | INFO | CurrentTrain:  epoch 7 | loss: 7.7256
+2024-05-25 21:19:06,852 | INFO | CurrentTrain:  epoch 8 | loss: 7.6217
+2024-05-25 21:23:40,875 | INFO | CurrentTrain:  epoch 9 | loss: 7.5836
+2024-05-25 21:28:40,871 | INFO | total acc: 85.52%   
+2024-05-25 21:30:47,858 | INFO | total acc: 85.52%   
+2024-05-25 21:31:23,208 | INFO | CurrentTrain:  epoch 0 | loss: 9.4555
+2024-05-25 21:31:46,212 | INFO | CurrentTrain:  epoch 1 | loss: 7.2836
+2024-05-25 21:32:09,230 | INFO | CurrentTrain:  epoch 2 | loss: 7.6363
+2024-05-25 21:32:32,251 | INFO | CurrentTrain:  epoch 3 | loss: 8.7280
+2024-05-25 21:32:55,267 | INFO | CurrentTrain:  epoch 4 | loss: 7.9928
+2024-05-25 21:33:18,285 | INFO | CurrentTrain:  epoch 5 | loss: 7.0331
+2024-05-25 21:33:41,296 | INFO | CurrentTrain:  epoch 6 | loss: 6.8834
+2024-05-25 21:34:04,298 | INFO | CurrentTrain:  epoch 7 | loss: 7.4881
+2024-05-25 21:34:27,271 | INFO | CurrentTrain:  epoch 8 | loss: 7.2918
+2024-05-25 21:34:50,278 | INFO | CurrentTrain:  epoch 9 | loss: 6.6166
+2024-05-25 21:36:13,782 | INFO | MemoryTrain:  epoch 0 | loss: 6.9572
+2024-05-25 21:36:42,630 | INFO | MemoryTrain:  epoch 1 | loss: 6.1500
+2024-05-25 21:37:11,508 | INFO | MemoryTrain:  epoch 2 | loss: 5.2330
+2024-05-25 21:37:40,385 | INFO | MemoryTrain:  epoch 3 | loss: 4.9768
+2024-05-25 21:38:09,224 | INFO | MemoryTrain:  epoch 4 | loss: 5.1915
+2024-05-25 21:38:38,034 | INFO | MemoryTrain:  epoch 5 | loss: 4.8643
+2024-05-25 21:39:06,823 | INFO | MemoryTrain:  epoch 6 | loss: 4.3029
+2024-05-25 21:39:35,612 | INFO | MemoryTrain:  epoch 7 | loss: 4.4308
+2024-05-25 21:40:04,401 | INFO | MemoryTrain:  epoch 8 | loss: 4.0675
+2024-05-25 21:40:33,192 | INFO | MemoryTrain:  epoch 9 | loss: 3.4378
+2024-05-25 21:41:20,229 | INFO | total acc: 88.20%   
+2024-05-25 21:44:10,506 | INFO | total acc: 86.06%   
+2024-05-25 21:44:45,820 | INFO | CurrentTrain:  epoch 0 | loss: 6.4335
+2024-05-25 21:45:08,783 | INFO | CurrentTrain:  epoch 1 | loss: 5.4178
+2024-05-25 21:45:31,751 | INFO | CurrentTrain:  epoch 2 | loss: 4.6149
+2024-05-25 21:45:54,731 | INFO | CurrentTrain:  epoch 3 | loss: 4.0481
+2024-05-25 21:46:17,705 | INFO | CurrentTrain:  epoch 4 | loss: 3.5291
+2024-05-25 21:46:40,657 | INFO | CurrentTrain:  epoch 5 | loss: 3.0218
+2024-05-25 21:47:03,634 | INFO | CurrentTrain:  epoch 6 | loss: 2.9424
+2024-05-25 21:47:26,610 | INFO | CurrentTrain:  epoch 7 | loss: 2.8442
+2024-05-25 21:47:49,571 | INFO | CurrentTrain:  epoch 8 | loss: 2.5595
+2024-05-25 21:48:12,549 | INFO | CurrentTrain:  epoch 9 | loss: 2.5044
+2024-05-25 21:49:51,011 | INFO | MemoryTrain:  epoch 0 | loss: 7.5041
+2024-05-25 21:50:33,501 | INFO | MemoryTrain:  epoch 1 | loss: 6.1594
+2024-05-25 21:51:15,934 | INFO | MemoryTrain:  epoch 2 | loss: 4.8901
+2024-05-25 21:51:58,431 | INFO | MemoryTrain:  epoch 3 | loss: 4.0819
+2024-05-25 21:52:40,902 | INFO | MemoryTrain:  epoch 4 | loss: 3.7980
+2024-05-25 21:53:23,360 | INFO | MemoryTrain:  epoch 5 | loss: 3.5004
+2024-05-25 21:54:05,795 | INFO | MemoryTrain:  epoch 6 | loss: 3.4130
+2024-05-25 21:54:48,238 | INFO | MemoryTrain:  epoch 7 | loss: 2.9481
+2024-05-25 21:55:30,653 | INFO | MemoryTrain:  epoch 8 | loss: 2.7053
+2024-05-25 21:56:13,091 | INFO | MemoryTrain:  epoch 9 | loss: 2.5179
+2024-05-25 21:57:26,766 | INFO | total acc: 66.43%   
+2024-05-25 22:01:25,508 | INFO | total acc: 66.22%   
+2024-05-25 22:01:57,998 | INFO | CurrentTrain:  epoch 0 | loss: 6.3279
+2024-05-25 22:02:19,155 | INFO | CurrentTrain:  epoch 1 | loss: 5.2534
+2024-05-25 22:02:40,290 | INFO | CurrentTrain:  epoch 2 | loss: 4.4563
+2024-05-25 22:03:01,416 | INFO | CurrentTrain:  epoch 3 | loss: 3.9212
+2024-05-25 22:03:22,545 | INFO | CurrentTrain:  epoch 4 | loss: 3.5677
+2024-05-25 22:03:43,691 | INFO | CurrentTrain:  epoch 5 | loss: 3.4442
+2024-05-25 22:04:04,815 | INFO | CurrentTrain:  epoch 6 | loss: 3.2135
+2024-05-25 22:04:25,949 | INFO | CurrentTrain:  epoch 7 | loss: 3.1214
+2024-05-25 22:04:47,062 | INFO | CurrentTrain:  epoch 8 | loss: 3.1049
+2024-05-25 22:05:08,175 | INFO | CurrentTrain:  epoch 9 | loss: 3.0458
+2024-05-25 22:07:07,627 | INFO | MemoryTrain:  epoch 0 | loss: 7.6010
+2024-05-25 22:08:03,743 | INFO | MemoryTrain:  epoch 1 | loss: 6.0276
+2024-05-25 22:08:59,760 | INFO | MemoryTrain:  epoch 2 | loss: 4.3260
+2024-05-25 22:09:55,776 | INFO | MemoryTrain:  epoch 3 | loss: 3.6802
+2024-05-25 22:10:51,673 | INFO | MemoryTrain:  epoch 4 | loss: 3.2908
+2024-05-25 22:11:47,722 | INFO | MemoryTrain:  epoch 5 | loss: 2.9327
+2024-05-25 22:12:43,795 | INFO | MemoryTrain:  epoch 6 | loss: 2.4755
+2024-05-25 22:13:39,863 | INFO | MemoryTrain:  epoch 7 | loss: 2.3430
+2024-05-25 22:14:35,927 | INFO | MemoryTrain:  epoch 8 | loss: 2.1804
+2024-05-25 22:15:31,976 | INFO | MemoryTrain:  epoch 9 | loss: 2.0946
+2024-05-25 22:16:23,982 | INFO | total acc: 65.22%   
+2024-05-25 22:21:07,831 | INFO | total acc: 60.19%   
+2024-05-25 22:21:43,133 | INFO | CurrentTrain:  epoch 0 | loss: 5.4208
+2024-05-25 22:22:06,089 | INFO | CurrentTrain:  epoch 1 | loss: 4.3447
+2024-05-25 22:22:29,010 | INFO | CurrentTrain:  epoch 2 | loss: 3.5674
+2024-05-25 22:22:51,934 | INFO | CurrentTrain:  epoch 3 | loss: 3.2450
+2024-05-25 22:23:14,883 | INFO | CurrentTrain:  epoch 4 | loss: 2.9202
+2024-05-25 22:23:37,821 | INFO | CurrentTrain:  epoch 5 | loss: 2.7435
+2024-05-25 22:24:00,765 | INFO | CurrentTrain:  epoch 6 | loss: 2.6150
+2024-05-25 22:24:23,712 | INFO | CurrentTrain:  epoch 7 | loss: 2.5021
+2024-05-25 22:24:46,638 | INFO | CurrentTrain:  epoch 8 | loss: 2.4309
+2024-05-25 22:25:09,603 | INFO | CurrentTrain:  epoch 9 | loss: 2.3953
+2024-05-25 22:27:31,717 | INFO | MemoryTrain:  epoch 0 | loss: 5.6562
+2024-05-25 22:28:41,420 | INFO | MemoryTrain:  epoch 1 | loss: 3.9321
+2024-05-25 22:29:51,021 | INFO | MemoryTrain:  epoch 2 | loss: 3.0544
+2024-05-25 22:31:00,602 | INFO | MemoryTrain:  epoch 3 | loss: 2.7787
+2024-05-25 22:32:10,202 | INFO | MemoryTrain:  epoch 4 | loss: 2.6682
+2024-05-25 22:33:19,865 | INFO | MemoryTrain:  epoch 5 | loss: 2.5352
+2024-05-25 22:34:29,412 | INFO | MemoryTrain:  epoch 6 | loss: 2.4569
+2024-05-25 22:35:38,937 | INFO | MemoryTrain:  epoch 7 | loss: 2.3417
+2024-05-25 22:36:48,454 | INFO | MemoryTrain:  epoch 8 | loss: 2.2619
+2024-05-25 22:37:57,980 | INFO | MemoryTrain:  epoch 9 | loss: 2.1916
+2024-05-25 22:39:00,924 | INFO | total acc: 77.93%   
+2024-05-25 22:44:39,072 | INFO | total acc: 62.54%   
+2024-05-25 22:45:14,370 | INFO | CurrentTrain:  epoch 0 | loss: 8.1963
+2024-05-25 22:45:37,273 | INFO | CurrentTrain:  epoch 1 | loss: 6.5969
+2024-05-25 22:46:00,142 | INFO | CurrentTrain:  epoch 2 | loss: 5.5896
+2024-05-25 22:46:23,083 | INFO | CurrentTrain:  epoch 3 | loss: 4.8132
+2024-05-25 22:46:46,016 | INFO | CurrentTrain:  epoch 4 | loss: 4.4831
+2024-05-25 22:47:08,962 | INFO | CurrentTrain:  epoch 5 | loss: 4.2360
+2024-05-25 22:47:31,891 | INFO | CurrentTrain:  epoch 6 | loss: 3.9817
+2024-05-25 22:47:54,825 | INFO | CurrentTrain:  epoch 7 | loss: 3.7169
+2024-05-25 22:48:17,739 | INFO | CurrentTrain:  epoch 8 | loss: 3.3806
+2024-05-25 22:48:40,659 | INFO | CurrentTrain:  epoch 9 | loss: 3.3013
+2024-05-25 22:51:24,024 | INFO | MemoryTrain:  epoch 0 | loss: 5.3121
+2024-05-25 22:52:47,293 | INFO | MemoryTrain:  epoch 1 | loss: 3.8898
+2024-05-25 22:54:10,530 | INFO | MemoryTrain:  epoch 2 | loss: 3.1294
+2024-05-25 22:55:33,739 | INFO | MemoryTrain:  epoch 3 | loss: 2.6894
+2024-05-25 22:56:56,919 | INFO | MemoryTrain:  epoch 4 | loss: 2.3995
+2024-05-25 22:58:20,288 | INFO | MemoryTrain:  epoch 5 | loss: 2.2502
+2024-05-25 22:59:43,612 | INFO | MemoryTrain:  epoch 6 | loss: 2.1247
+2024-05-25 23:01:06,957 | INFO | MemoryTrain:  epoch 7 | loss: 2.0444
+2024-05-25 23:02:30,269 | INFO | MemoryTrain:  epoch 8 | loss: 2.0039
+2024-05-25 23:03:53,628 | INFO | MemoryTrain:  epoch 9 | loss: 1.9691
+2024-05-25 23:05:30,484 | INFO | total acc: 57.06%   
+2024-05-25 23:12:35,336 | INFO | total acc: 60.15%   
+2024-05-25 23:13:10,939 | INFO | CurrentTrain:  epoch 0 | loss: 5.8046
+2024-05-25 23:13:34,277 | INFO | CurrentTrain:  epoch 1 | loss: 4.3027
+2024-05-25 23:13:57,692 | INFO | CurrentTrain:  epoch 2 | loss: 3.3781
+2024-05-25 23:14:21,191 | INFO | CurrentTrain:  epoch 3 | loss: 2.8141
+2024-05-25 23:14:44,723 | INFO | CurrentTrain:  epoch 4 | loss: 2.5315
+2024-05-25 23:15:08,310 | INFO | CurrentTrain:  epoch 5 | loss: 2.4472
+2024-05-25 23:15:31,913 | INFO | CurrentTrain:  epoch 6 | loss: 2.3821
+2024-05-25 23:15:55,603 | INFO | CurrentTrain:  epoch 7 | loss: 2.3528
+2024-05-25 23:16:19,409 | INFO | CurrentTrain:  epoch 8 | loss: 2.3390
+2024-05-25 23:16:43,285 | INFO | CurrentTrain:  epoch 9 | loss: 2.3318
+2024-05-25 23:19:51,379 | INFO | MemoryTrain:  epoch 0 | loss: 6.5067
+2024-05-25 23:21:30,270 | INFO | MemoryTrain:  epoch 1 | loss: 3.8775
+2024-05-25 23:23:07,430 | INFO | MemoryTrain:  epoch 2 | loss: 2.6191
+2024-05-25 23:24:44,149 | INFO | MemoryTrain:  epoch 3 | loss: 2.2783
+2024-05-25 23:26:21,096 | INFO | MemoryTrain:  epoch 4 | loss: 2.1068
+2024-05-25 23:27:59,030 | INFO | MemoryTrain:  epoch 5 | loss: 2.0194
+2024-05-25 23:29:38,502 | INFO | MemoryTrain:  epoch 6 | loss: 1.9567
+2024-05-25 23:31:18,239 | INFO | MemoryTrain:  epoch 7 | loss: 1.9339
+2024-05-25 23:32:56,749 | INFO | MemoryTrain:  epoch 8 | loss: 1.9139
+2024-05-25 23:34:33,978 | INFO | MemoryTrain:  epoch 9 | loss: 1.8983
+2024-05-25 23:35:44,418 | INFO | total acc: 66.25%   
+2024-05-25 23:43:59,476 | INFO | total acc: 62.56%   
+2024-05-25 23:44:36,518 | INFO | CurrentTrain:  epoch 0 | loss: 5.8281
+2024-05-25 23:45:00,397 | INFO | CurrentTrain:  epoch 1 | loss: 4.2030
+2024-05-25 23:45:24,286 | INFO | CurrentTrain:  epoch 2 | loss: 3.0125
+2024-05-25 23:45:48,041 | INFO | CurrentTrain:  epoch 3 | loss: 2.7453
+2024-05-25 23:46:11,806 | INFO | CurrentTrain:  epoch 4 | loss: 2.5486
+2024-05-25 23:46:35,529 | INFO | CurrentTrain:  epoch 5 | loss: 2.4661
+2024-05-25 23:46:59,251 | INFO | CurrentTrain:  epoch 6 | loss: 2.4136
+2024-05-25 23:47:22,998 | INFO | CurrentTrain:  epoch 7 | loss: 2.3849
+2024-05-25 23:47:46,755 | INFO | CurrentTrain:  epoch 8 | loss: 2.3671
+2024-05-25 23:48:10,486 | INFO | CurrentTrain:  epoch 9 | loss: 2.3554
+2024-05-25 23:51:41,117 | INFO | MemoryTrain:  epoch 0 | loss: 5.2780
+2024-05-25 23:53:32,486 | INFO | MemoryTrain:  epoch 1 | loss: 3.0152
+2024-05-25 23:55:23,632 | INFO | MemoryTrain:  epoch 2 | loss: 2.3292
+2024-05-25 23:57:15,353 | INFO | MemoryTrain:  epoch 3 | loss: 2.1274
+2024-05-25 23:59:06,360 | INFO | MemoryTrain:  epoch 4 | loss: 1.9898
+2024-05-26 00:00:57,611 | INFO | MemoryTrain:  epoch 5 | loss: 1.9464
+2024-05-26 00:02:48,756 | INFO | MemoryTrain:  epoch 6 | loss: 1.9179
+2024-05-26 00:04:39,484 | INFO | MemoryTrain:  epoch 7 | loss: 1.9012
+2024-05-26 00:06:30,080 | INFO | MemoryTrain:  epoch 8 | loss: 1.8892
+2024-05-26 00:08:22,463 | INFO | MemoryTrain:  epoch 9 | loss: 1.8816
+2024-05-26 00:09:13,719 | INFO | total acc: 74.67%   
+2024-05-26 00:17:54,328 | INFO | total acc: 61.73%   
+2024-05-26 00:17:59,477 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-26 00:25:10,018 | INFO | CurrentTrain:  epoch 0 | loss: 13.7002
+2024-05-26 00:29:56,459 | INFO | CurrentTrain:  epoch 1 | loss: 12.1993
+2024-05-26 00:34:41,248 | INFO | CurrentTrain:  epoch 2 | loss: 9.8655
+2024-05-26 00:39:25,832 | INFO | CurrentTrain:  epoch 3 | loss: 9.0426
+2024-05-26 00:44:10,449 | INFO | CurrentTrain:  epoch 4 | loss: 8.6196
+2024-05-26 00:48:48,981 | INFO | CurrentTrain:  epoch 5 | loss: 8.4074
+2024-05-26 00:53:23,613 | INFO | CurrentTrain:  epoch 6 | loss: 7.9707
+2024-05-26 00:57:59,059 | INFO | CurrentTrain:  epoch 7 | loss: 8.8033
+2024-05-26 01:02:34,303 | INFO | CurrentTrain:  epoch 8 | loss: 8.4882
+2024-05-26 01:07:09,838 | INFO | CurrentTrain:  epoch 9 | loss: 8.2359
+2024-05-26 01:12:11,576 | INFO | total acc: 83.20%   
+2024-05-26 01:14:18,622 | INFO | total acc: 83.20%   
+2024-05-26 01:14:53,953 | INFO | CurrentTrain:  epoch 0 | loss: 9.7153
+2024-05-26 01:15:16,909 | INFO | CurrentTrain:  epoch 1 | loss: 6.8173
+2024-05-26 01:15:39,875 | INFO | CurrentTrain:  epoch 2 | loss: 6.8827
+2024-05-26 01:16:02,829 | INFO | CurrentTrain:  epoch 3 | loss: 6.4392
+2024-05-26 01:16:25,784 | INFO | CurrentTrain:  epoch 4 | loss: 6.0281
+2024-05-26 01:16:48,742 | INFO | CurrentTrain:  epoch 5 | loss: 5.7408
+2024-05-26 01:17:11,692 | INFO | CurrentTrain:  epoch 6 | loss: 5.1319
+2024-05-26 01:17:34,653 | INFO | CurrentTrain:  epoch 7 | loss: 4.6125
+2024-05-26 01:17:57,618 | INFO | CurrentTrain:  epoch 8 | loss: 3.9812
+2024-05-26 01:18:20,583 | INFO | CurrentTrain:  epoch 9 | loss: 3.5732
+2024-05-26 01:19:40,445 | INFO | MemoryTrain:  epoch 0 | loss: 6.3737
+2024-05-26 01:20:10,607 | INFO | MemoryTrain:  epoch 1 | loss: 5.4731
+2024-05-26 01:20:40,818 | INFO | MemoryTrain:  epoch 2 | loss: 4.7091
+2024-05-26 01:21:11,017 | INFO | MemoryTrain:  epoch 3 | loss: 4.4251
+2024-05-26 01:21:41,214 | INFO | MemoryTrain:  epoch 4 | loss: 4.2816
+2024-05-26 01:22:11,400 | INFO | MemoryTrain:  epoch 5 | loss: 4.3814
+2024-05-26 01:22:41,591 | INFO | MemoryTrain:  epoch 6 | loss: 4.2951
+2024-05-26 01:23:11,786 | INFO | MemoryTrain:  epoch 7 | loss: 4.6442
+2024-05-26 01:23:41,986 | INFO | MemoryTrain:  epoch 8 | loss: 4.4510
+2024-05-26 01:24:12,168 | INFO | MemoryTrain:  epoch 9 | loss: 4.2030
+2024-05-26 01:25:10,251 | INFO | total acc: 85.14%   
+2024-05-26 01:28:11,645 | INFO | total acc: 86.49%   
+2024-05-26 01:28:46,952 | INFO | CurrentTrain:  epoch 0 | loss: 6.2654
+2024-05-26 01:29:09,896 | INFO | CurrentTrain:  epoch 1 | loss: 5.7838
+2024-05-26 01:29:32,877 | INFO | CurrentTrain:  epoch 2 | loss: 4.8137
+2024-05-26 01:29:55,836 | INFO | CurrentTrain:  epoch 3 | loss: 4.3258
+2024-05-26 01:30:18,765 | INFO | CurrentTrain:  epoch 4 | loss: 3.7252
+2024-05-26 01:30:41,704 | INFO | CurrentTrain:  epoch 5 | loss: 3.2977
+2024-05-26 01:31:04,655 | INFO | CurrentTrain:  epoch 6 | loss: 3.0278
+2024-05-26 01:31:27,604 | INFO | CurrentTrain:  epoch 7 | loss: 2.7660
+2024-05-26 01:31:50,546 | INFO | CurrentTrain:  epoch 8 | loss: 2.5713
+2024-05-26 01:32:13,492 | INFO | CurrentTrain:  epoch 9 | loss: 2.4765
+2024-05-26 01:33:56,462 | INFO | MemoryTrain:  epoch 0 | loss: 5.7795
+2024-05-26 01:34:40,314 | INFO | MemoryTrain:  epoch 1 | loss: 4.4024
+2024-05-26 01:35:24,150 | INFO | MemoryTrain:  epoch 2 | loss: 3.6551
+2024-05-26 01:36:07,960 | INFO | MemoryTrain:  epoch 3 | loss: 3.0642
+2024-05-26 01:36:51,741 | INFO | MemoryTrain:  epoch 4 | loss: 2.9740
+2024-05-26 01:37:35,516 | INFO | MemoryTrain:  epoch 5 | loss: 2.6709
+2024-05-26 01:38:19,213 | INFO | MemoryTrain:  epoch 6 | loss: 2.4499
+2024-05-26 01:39:02,960 | INFO | MemoryTrain:  epoch 7 | loss: 2.2784
+2024-05-26 01:39:46,669 | INFO | MemoryTrain:  epoch 8 | loss: 2.1414
+2024-05-26 01:40:30,378 | INFO | MemoryTrain:  epoch 9 | loss: 2.0707
+2024-05-26 01:41:12,230 | INFO | total acc: 86.67%   
+2024-05-26 01:44:50,155 | INFO | total acc: 85.51%   
+2024-05-26 01:45:25,522 | INFO | CurrentTrain:  epoch 0 | loss: 4.7686
+2024-05-26 01:45:48,505 | INFO | CurrentTrain:  epoch 1 | loss: 3.8715
+2024-05-26 01:46:11,492 | INFO | CurrentTrain:  epoch 2 | loss: 2.9755
+2024-05-26 01:46:34,508 | INFO | CurrentTrain:  epoch 3 | loss: 2.6003
+2024-05-26 01:46:57,492 | INFO | CurrentTrain:  epoch 4 | loss: 2.4162
+2024-05-26 01:47:20,506 | INFO | CurrentTrain:  epoch 5 | loss: 2.3892
+2024-05-26 01:47:43,497 | INFO | CurrentTrain:  epoch 6 | loss: 2.3660
+2024-05-26 01:48:06,484 | INFO | CurrentTrain:  epoch 7 | loss: 2.3464
+2024-05-26 01:48:29,472 | INFO | CurrentTrain:  epoch 8 | loss: 2.3367
+2024-05-26 01:48:52,472 | INFO | CurrentTrain:  epoch 9 | loss: 2.3315
+2024-05-26 01:50:59,102 | INFO | MemoryTrain:  epoch 0 | loss: 6.4882
+2024-05-26 01:51:56,681 | INFO | MemoryTrain:  epoch 1 | loss: 4.7844
+2024-05-26 01:52:54,170 | INFO | MemoryTrain:  epoch 2 | loss: 3.6594
+2024-05-26 01:53:51,565 | INFO | MemoryTrain:  epoch 3 | loss: 3.0045
+2024-05-26 01:54:48,958 | INFO | MemoryTrain:  epoch 4 | loss: 2.3811
+2024-05-26 01:55:46,511 | INFO | MemoryTrain:  epoch 5 | loss: 2.1913
+2024-05-26 01:56:44,061 | INFO | MemoryTrain:  epoch 6 | loss: 2.0720
+2024-05-26 01:57:41,588 | INFO | MemoryTrain:  epoch 7 | loss: 1.9761
+2024-05-26 01:58:39,128 | INFO | MemoryTrain:  epoch 8 | loss: 1.9373
+2024-05-26 01:59:36,644 | INFO | MemoryTrain:  epoch 9 | loss: 1.8966
+2024-05-26 02:00:42,717 | INFO | total acc: 83.75%   
+2024-05-26 02:05:19,185 | INFO | total acc: 82.00%   
+2024-05-26 02:05:51,692 | INFO | CurrentTrain:  epoch 0 | loss: 4.8126
+2024-05-26 02:06:12,837 | INFO | CurrentTrain:  epoch 1 | loss: 5.0049
+2024-05-26 02:06:33,979 | INFO | CurrentTrain:  epoch 2 | loss: 4.1826
+2024-05-26 02:06:55,112 | INFO | CurrentTrain:  epoch 3 | loss: 3.5234
+2024-05-26 02:07:16,244 | INFO | CurrentTrain:  epoch 4 | loss: 3.1966
+2024-05-26 02:07:37,370 | INFO | CurrentTrain:  epoch 5 | loss: 2.9296
+2024-05-26 02:07:58,503 | INFO | CurrentTrain:  epoch 6 | loss: 2.7740
+2024-05-26 02:08:19,642 | INFO | CurrentTrain:  epoch 7 | loss: 2.6581
+2024-05-26 02:08:40,783 | INFO | CurrentTrain:  epoch 8 | loss: 2.5540
+2024-05-26 02:09:01,932 | INFO | CurrentTrain:  epoch 9 | loss: 2.4730
+2024-05-26 02:11:22,502 | INFO | MemoryTrain:  epoch 0 | loss: 5.7239
+2024-05-26 02:12:33,681 | INFO | MemoryTrain:  epoch 1 | loss: 3.6916
+2024-05-26 02:13:44,882 | INFO | MemoryTrain:  epoch 2 | loss: 2.6239
+2024-05-26 02:14:56,085 | INFO | MemoryTrain:  epoch 3 | loss: 2.5624
+2024-05-26 02:16:07,303 | INFO | MemoryTrain:  epoch 4 | loss: 2.5043
+2024-05-26 02:17:18,567 | INFO | MemoryTrain:  epoch 5 | loss: 2.3160
+2024-05-26 02:18:29,829 | INFO | MemoryTrain:  epoch 6 | loss: 2.1921
+2024-05-26 02:19:41,031 | INFO | MemoryTrain:  epoch 7 | loss: 2.1202
+2024-05-26 02:20:52,257 | INFO | MemoryTrain:  epoch 8 | loss: 2.0537
+2024-05-26 02:22:03,444 | INFO | MemoryTrain:  epoch 9 | loss: 1.9738
+2024-05-26 02:22:57,195 | INFO | total acc: 83.70%   
+2024-05-26 02:28:19,204 | INFO | total acc: 76.22%   
+2024-05-26 02:28:54,546 | INFO | CurrentTrain:  epoch 0 | loss: 7.4734
+2024-05-26 02:29:17,559 | INFO | CurrentTrain:  epoch 1 | loss: 6.3000
+2024-05-26 02:29:40,548 | INFO | CurrentTrain:  epoch 2 | loss: 5.5321
+2024-05-26 02:30:03,540 | INFO | CurrentTrain:  epoch 3 | loss: 4.8978
+2024-05-26 02:30:26,524 | INFO | CurrentTrain:  epoch 4 | loss: 4.5045
+2024-05-26 02:30:49,508 | INFO | CurrentTrain:  epoch 5 | loss: 4.1833
+2024-05-26 02:31:12,493 | INFO | CurrentTrain:  epoch 6 | loss: 4.1607
+2024-05-26 02:31:35,491 | INFO | CurrentTrain:  epoch 7 | loss: 3.5952
+2024-05-26 02:31:58,459 | INFO | CurrentTrain:  epoch 8 | loss: 2.8788
+2024-05-26 02:32:21,450 | INFO | CurrentTrain:  epoch 9 | loss: 2.7382
+2024-05-26 02:35:06,494 | INFO | MemoryTrain:  epoch 0 | loss: 5.4896
+2024-05-26 02:36:31,431 | INFO | MemoryTrain:  epoch 1 | loss: 3.4674
+2024-05-26 02:37:56,497 | INFO | MemoryTrain:  epoch 2 | loss: 2.5226
+2024-05-26 02:39:21,560 | INFO | MemoryTrain:  epoch 3 | loss: 2.2553
+2024-05-26 02:40:47,319 | INFO | MemoryTrain:  epoch 4 | loss: 2.0841
+2024-05-26 02:42:12,540 | INFO | MemoryTrain:  epoch 5 | loss: 1.9994
+2024-05-26 02:43:37,341 | INFO | MemoryTrain:  epoch 6 | loss: 1.9449
+2024-05-26 02:45:02,317 | INFO | MemoryTrain:  epoch 7 | loss: 1.8995
+2024-05-26 02:46:27,246 | INFO | MemoryTrain:  epoch 8 | loss: 1.8754
+2024-05-26 02:47:52,157 | INFO | MemoryTrain:  epoch 9 | loss: 1.8609
+2024-05-26 02:49:12,163 | INFO | total acc: 76.43%   
+2024-05-26 02:55:54,125 | INFO | total acc: 73.81%   
+2024-05-26 02:56:29,601 | INFO | CurrentTrain:  epoch 0 | loss: 7.1153
+2024-05-26 02:56:52,567 | INFO | CurrentTrain:  epoch 1 | loss: 5.9969
+2024-05-26 02:57:15,560 | INFO | CurrentTrain:  epoch 2 | loss: 5.2855
+2024-05-26 02:57:38,593 | INFO | CurrentTrain:  epoch 3 | loss: 4.6284
+2024-05-26 02:58:01,593 | INFO | CurrentTrain:  epoch 4 | loss: 4.1606
+2024-05-26 02:58:24,606 | INFO | CurrentTrain:  epoch 5 | loss: 3.9334
+2024-05-26 02:58:47,636 | INFO | CurrentTrain:  epoch 6 | loss: 3.6217
+2024-05-26 02:59:10,649 | INFO | CurrentTrain:  epoch 7 | loss: 3.3207
+2024-05-26 02:59:33,700 | INFO | CurrentTrain:  epoch 8 | loss: 3.5908
+2024-05-26 02:59:57,217 | INFO | CurrentTrain:  epoch 9 | loss: 3.2654
+2024-05-26 03:03:05,656 | INFO | MemoryTrain:  epoch 0 | loss: 4.3832
+2024-05-26 03:04:44,344 | INFO | MemoryTrain:  epoch 1 | loss: 3.3794
+2024-05-26 03:06:22,986 | INFO | MemoryTrain:  epoch 2 | loss: 2.6970
+2024-05-26 03:08:01,597 | INFO | MemoryTrain:  epoch 3 | loss: 2.3292
+2024-05-26 03:09:40,166 | INFO | MemoryTrain:  epoch 4 | loss: 2.1941
+2024-05-26 03:11:18,761 | INFO | MemoryTrain:  epoch 5 | loss: 2.0711
+2024-05-26 03:12:57,330 | INFO | MemoryTrain:  epoch 6 | loss: 2.0061
+2024-05-26 03:14:35,899 | INFO | MemoryTrain:  epoch 7 | loss: 1.9642
+2024-05-26 03:16:14,416 | INFO | MemoryTrain:  epoch 8 | loss: 1.9409
+2024-05-26 03:17:52,917 | INFO | MemoryTrain:  epoch 9 | loss: 1.9298
+2024-05-26 03:19:31,731 | INFO | total acc: 79.66%   
+2024-05-26 03:27:30,208 | INFO | total acc: 71.69%   
+2024-05-26 03:28:05,645 | INFO | CurrentTrain:  epoch 0 | loss: 4.8973
+2024-05-26 03:28:28,648 | INFO | CurrentTrain:  epoch 1 | loss: 4.3211
+2024-05-26 03:28:51,675 | INFO | CurrentTrain:  epoch 2 | loss: 3.2654
+2024-05-26 03:29:14,719 | INFO | CurrentTrain:  epoch 3 | loss: 3.0329
+2024-05-26 03:29:37,744 | INFO | CurrentTrain:  epoch 4 | loss: 2.7802
+2024-05-26 03:30:00,786 | INFO | CurrentTrain:  epoch 5 | loss: 2.6874
+2024-05-26 03:30:23,810 | INFO | CurrentTrain:  epoch 6 | loss: 2.6114
+2024-05-26 03:30:46,812 | INFO | CurrentTrain:  epoch 7 | loss: 2.5269
+2024-05-26 03:31:09,810 | INFO | CurrentTrain:  epoch 8 | loss: 2.4602
+2024-05-26 03:31:32,837 | INFO | CurrentTrain:  epoch 9 | loss: 2.4003
+2024-05-26 03:35:02,488 | INFO | MemoryTrain:  epoch 0 | loss: 6.0110
+2024-05-26 03:36:54,928 | INFO | MemoryTrain:  epoch 1 | loss: 3.5048
+2024-05-26 03:38:47,329 | INFO | MemoryTrain:  epoch 2 | loss: 2.5555
+2024-05-26 03:40:39,637 | INFO | MemoryTrain:  epoch 3 | loss: 2.3428
+2024-05-26 03:42:31,926 | INFO | MemoryTrain:  epoch 4 | loss: 2.2013
+2024-05-26 03:44:24,170 | INFO | MemoryTrain:  epoch 5 | loss: 2.0964
+2024-05-26 03:46:16,380 | INFO | MemoryTrain:  epoch 6 | loss: 2.0040
+2024-05-26 03:48:08,597 | INFO | MemoryTrain:  epoch 7 | loss: 1.9450
+2024-05-26 03:50:00,857 | INFO | MemoryTrain:  epoch 8 | loss: 1.9247
+2024-05-26 03:51:53,092 | INFO | MemoryTrain:  epoch 9 | loss: 1.9136
+2024-05-26 03:52:50,099 | INFO | total acc: 69.10%   
+2024-05-26 04:01:33,859 | INFO | total acc: 69.04%   
+2024-05-26 04:01:38,610 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2024-05-26 04:08:45,922 | INFO | CurrentTrain:  epoch 0 | loss: 13.7052
+2024-05-26 04:13:18,543 | INFO | CurrentTrain:  epoch 1 | loss: 12.2179
+2024-05-26 04:17:51,222 | INFO | CurrentTrain:  epoch 2 | loss: 10.1482
+2024-05-26 04:22:23,843 | INFO | CurrentTrain:  epoch 3 | loss: 9.4817
+2024-05-26 04:26:56,503 | INFO | CurrentTrain:  epoch 4 | loss: 8.6452
+2024-05-26 04:31:29,120 | INFO | CurrentTrain:  epoch 5 | loss: 8.1318
+2024-05-26 04:36:01,784 | INFO | CurrentTrain:  epoch 6 | loss: 7.8608
+2024-05-26 04:40:34,336 | INFO | CurrentTrain:  epoch 7 | loss: 7.6406
+2024-05-26 04:45:06,961 | INFO | CurrentTrain:  epoch 8 | loss: 7.5012
+2024-05-26 04:49:39,596 | INFO | CurrentTrain:  epoch 9 | loss: 7.3270
+2024-05-26 04:54:38,660 | INFO | total acc: 87.26%   
+2024-05-26 04:56:44,805 | INFO | total acc: 87.26%   
+2024-05-26 04:57:17,105 | INFO | CurrentTrain:  epoch 0 | loss: 8.4129
+2024-05-26 04:57:38,089 | INFO | CurrentTrain:  epoch 1 | loss: 6.5417
+2024-05-26 04:57:59,052 | INFO | CurrentTrain:  epoch 2 | loss: 6.5768
+2024-05-26 04:58:19,998 | INFO | CurrentTrain:  epoch 3 | loss: 6.6141
+2024-05-26 04:58:40,988 | INFO | CurrentTrain:  epoch 4 | loss: 6.6741
+2024-05-26 04:59:01,979 | INFO | CurrentTrain:  epoch 5 | loss: 6.2114
+2024-05-26 04:59:22,940 | INFO | CurrentTrain:  epoch 6 | loss: 5.8718
+2024-05-26 04:59:43,896 | INFO | CurrentTrain:  epoch 7 | loss: 5.4349
+2024-05-26 05:00:04,836 | INFO | CurrentTrain:  epoch 8 | loss: 4.8938
+2024-05-26 05:00:25,785 | INFO | CurrentTrain:  epoch 9 | loss: 4.5685
+2024-05-26 05:01:45,426 | INFO | MemoryTrain:  epoch 0 | loss: 5.7603
+2024-05-26 05:02:15,320 | INFO | MemoryTrain:  epoch 1 | loss: 5.1222
+2024-05-26 05:02:45,263 | INFO | MemoryTrain:  epoch 2 | loss: 4.6174
+2024-05-26 05:03:15,221 | INFO | MemoryTrain:  epoch 3 | loss: 4.2963
+2024-05-26 05:03:45,165 | INFO | MemoryTrain:  epoch 4 | loss: 3.7635
+2024-05-26 05:04:15,102 | INFO | MemoryTrain:  epoch 5 | loss: 3.9514
+2024-05-26 05:04:45,028 | INFO | MemoryTrain:  epoch 6 | loss: 4.1051
+2024-05-26 05:05:14,965 | INFO | MemoryTrain:  epoch 7 | loss: 4.1684
+2024-05-26 05:05:44,894 | INFO | MemoryTrain:  epoch 8 | loss: 3.9105
+2024-05-26 05:06:14,825 | INFO | MemoryTrain:  epoch 9 | loss: 3.5797
+2024-05-26 05:07:03,331 | INFO | total acc: 87.50%   
+2024-05-26 05:09:54,359 | INFO | total acc: 78.92%   
+2024-05-26 05:10:29,425 | INFO | CurrentTrain:  epoch 0 | loss: 7.4481
+2024-05-26 05:10:52,245 | INFO | CurrentTrain:  epoch 1 | loss: 5.3532
+2024-05-26 05:11:15,040 | INFO | CurrentTrain:  epoch 2 | loss: 5.3649
+2024-05-26 05:11:37,889 | INFO | CurrentTrain:  epoch 3 | loss: 4.6598
+2024-05-26 05:12:00,685 | INFO | CurrentTrain:  epoch 4 | loss: 4.2114
+2024-05-26 05:12:23,503 | INFO | CurrentTrain:  epoch 5 | loss: 3.7947
+2024-05-26 05:12:46,319 | INFO | CurrentTrain:  epoch 6 | loss: 3.3292
+2024-05-26 05:13:09,117 | INFO | CurrentTrain:  epoch 7 | loss: 2.9532
+2024-05-26 05:13:31,911 | INFO | CurrentTrain:  epoch 8 | loss: 2.7185
+2024-05-26 05:13:54,724 | INFO | CurrentTrain:  epoch 9 | loss: 2.5392
+2024-05-26 05:15:37,238 | INFO | MemoryTrain:  epoch 0 | loss: 6.5740
+2024-05-26 05:16:20,811 | INFO | MemoryTrain:  epoch 1 | loss: 4.5863
+2024-05-26 05:17:04,376 | INFO | MemoryTrain:  epoch 2 | loss: 3.8731
+2024-05-26 05:17:47,947 | INFO | MemoryTrain:  epoch 3 | loss: 3.5252
+2024-05-26 05:18:31,492 | INFO | MemoryTrain:  epoch 4 | loss: 3.2838
+2024-05-26 05:19:15,014 | INFO | MemoryTrain:  epoch 5 | loss: 3.1476
+2024-05-26 05:19:58,553 | INFO | MemoryTrain:  epoch 6 | loss: 3.0614
+2024-05-26 05:20:42,020 | INFO | MemoryTrain:  epoch 7 | loss: 2.8117
+2024-05-26 05:21:25,477 | INFO | MemoryTrain:  epoch 8 | loss: 2.5661
+2024-05-26 05:22:08,932 | INFO | MemoryTrain:  epoch 9 | loss: 2.3505
+2024-05-26 05:22:57,295 | INFO | total acc: 93.26%   
+2024-05-26 05:26:31,878 | INFO | total acc: 80.68%   
+2024-05-26 05:27:06,953 | INFO | CurrentTrain:  epoch 0 | loss: 7.2836
+2024-05-26 05:27:29,735 | INFO | CurrentTrain:  epoch 1 | loss: 6.3358
+2024-05-26 05:27:52,528 | INFO | CurrentTrain:  epoch 2 | loss: 5.5104
+2024-05-26 05:28:15,329 | INFO | CurrentTrain:  epoch 3 | loss: 5.1001
+2024-05-26 05:28:38,114 | INFO | CurrentTrain:  epoch 4 | loss: 4.6229
+2024-05-26 05:29:00,918 | INFO | CurrentTrain:  epoch 5 | loss: 3.8569
+2024-05-26 05:29:23,714 | INFO | CurrentTrain:  epoch 6 | loss: 3.3532
+2024-05-26 05:29:46,521 | INFO | CurrentTrain:  epoch 7 | loss: 3.1561
+2024-05-26 05:30:09,324 | INFO | CurrentTrain:  epoch 8 | loss: 3.3088
+2024-05-26 05:30:32,111 | INFO | CurrentTrain:  epoch 9 | loss: 3.1781
+2024-05-26 05:32:31,360 | INFO | MemoryTrain:  epoch 0 | loss: 5.5992
+2024-05-26 05:33:28,411 | INFO | MemoryTrain:  epoch 1 | loss: 4.4288
+2024-05-26 05:34:25,471 | INFO | MemoryTrain:  epoch 2 | loss: 3.6416
+2024-05-26 05:35:22,529 | INFO | MemoryTrain:  epoch 3 | loss: 3.2193
+2024-05-26 05:36:19,610 | INFO | MemoryTrain:  epoch 4 | loss: 2.9864
+2024-05-26 05:37:16,618 | INFO | MemoryTrain:  epoch 5 | loss: 2.5705
+2024-05-26 05:38:13,646 | INFO | MemoryTrain:  epoch 6 | loss: 2.3360
+2024-05-26 05:39:10,686 | INFO | MemoryTrain:  epoch 7 | loss: 2.1809
+2024-05-26 05:40:07,720 | INFO | MemoryTrain:  epoch 8 | loss: 2.0705
+2024-05-26 05:41:04,757 | INFO | MemoryTrain:  epoch 9 | loss: 1.9996
+2024-05-26 05:42:19,671 | INFO | total acc: 83.93%   
+2024-05-26 05:47:01,679 | INFO | total acc: 74.70%   
+2024-05-26 05:47:36,757 | INFO | CurrentTrain:  epoch 0 | loss: 5.2036
+2024-05-26 05:47:59,548 | INFO | CurrentTrain:  epoch 1 | loss: 4.0398
+2024-05-26 05:48:22,336 | INFO | CurrentTrain:  epoch 2 | loss: 3.3733
+2024-05-26 05:48:45,147 | INFO | CurrentTrain:  epoch 3 | loss: 2.9507
+2024-05-26 05:49:07,917 | INFO | CurrentTrain:  epoch 4 | loss: 2.6646
+2024-05-26 05:49:30,697 | INFO | CurrentTrain:  epoch 5 | loss: 2.4873
+2024-05-26 05:49:53,479 | INFO | CurrentTrain:  epoch 6 | loss: 2.4128
+2024-05-26 05:50:16,263 | INFO | CurrentTrain:  epoch 7 | loss: 2.3826
+2024-05-26 05:50:39,041 | INFO | CurrentTrain:  epoch 8 | loss: 2.3560
+2024-05-26 05:51:01,837 | INFO | CurrentTrain:  epoch 9 | loss: 2.3412
+2024-05-26 05:53:23,232 | INFO | MemoryTrain:  epoch 0 | loss: 4.9633
+2024-05-26 05:54:33,927 | INFO | MemoryTrain:  epoch 1 | loss: 3.3827
+2024-05-26 05:55:44,606 | INFO | MemoryTrain:  epoch 2 | loss: 2.4325
+2024-05-26 05:56:55,224 | INFO | MemoryTrain:  epoch 3 | loss: 2.2421
+2024-05-26 05:58:05,827 | INFO | MemoryTrain:  epoch 4 | loss: 2.0715
+2024-05-26 05:59:16,422 | INFO | MemoryTrain:  epoch 5 | loss: 1.9760
+2024-05-26 06:00:27,020 | INFO | MemoryTrain:  epoch 6 | loss: 1.9211
+2024-05-26 06:01:37,621 | INFO | MemoryTrain:  epoch 7 | loss: 1.8841
+2024-05-26 06:02:48,196 | INFO | MemoryTrain:  epoch 8 | loss: 1.8635
+2024-05-26 06:03:58,783 | INFO | MemoryTrain:  epoch 9 | loss: 1.8525
+2024-05-26 06:04:43,609 | INFO | total acc: 94.67%   
+2024-05-26 06:10:03,866 | INFO | total acc: 77.52%   
+2024-05-26 06:10:39,120 | INFO | CurrentTrain:  epoch 0 | loss: 7.2168
+2024-05-26 06:11:02,053 | INFO | CurrentTrain:  epoch 1 | loss: 6.6750
+2024-05-26 06:11:24,969 | INFO | CurrentTrain:  epoch 2 | loss: 5.8598
+2024-05-26 06:11:47,941 | INFO | CurrentTrain:  epoch 3 | loss: 5.3204
+2024-05-26 06:12:10,909 | INFO | CurrentTrain:  epoch 4 | loss: 4.6943
+2024-05-26 06:12:33,906 | INFO | CurrentTrain:  epoch 5 | loss: 4.1227
+2024-05-26 06:12:56,873 | INFO | CurrentTrain:  epoch 6 | loss: 3.7654
+2024-05-26 06:13:19,839 | INFO | CurrentTrain:  epoch 7 | loss: 3.6620
+2024-05-26 06:13:42,806 | INFO | CurrentTrain:  epoch 8 | loss: 3.4787
+2024-05-26 06:14:05,762 | INFO | CurrentTrain:  epoch 9 | loss: 3.5271
+2024-05-26 06:16:48,480 | INFO | MemoryTrain:  epoch 0 | loss: 4.1263
+2024-05-26 06:18:13,189 | INFO | MemoryTrain:  epoch 1 | loss: 3.1583
+2024-05-26 06:19:38,414 | INFO | MemoryTrain:  epoch 2 | loss: 2.5657
+2024-05-26 06:21:04,530 | INFO | MemoryTrain:  epoch 3 | loss: 2.3341
+2024-05-26 06:22:29,722 | INFO | MemoryTrain:  epoch 4 | loss: 2.1400
+2024-05-26 06:23:54,536 | INFO | MemoryTrain:  epoch 5 | loss: 1.9915
+2024-05-26 06:25:19,198 | INFO | MemoryTrain:  epoch 6 | loss: 1.9158
+2024-05-26 06:26:43,825 | INFO | MemoryTrain:  epoch 7 | loss: 1.8778
+2024-05-26 06:28:08,382 | INFO | MemoryTrain:  epoch 8 | loss: 1.8552
+2024-05-26 06:29:33,074 | INFO | MemoryTrain:  epoch 9 | loss: 1.8424
+2024-05-26 06:31:10,246 | INFO | total acc: 69.21%   
+2024-05-26 06:37:58,516 | INFO | total acc: 70.88%   
+2024-05-26 06:38:33,909 | INFO | CurrentTrain:  epoch 0 | loss: 6.2679
+2024-05-26 06:38:56,905 | INFO | CurrentTrain:  epoch 1 | loss: 4.5070
+2024-05-26 06:39:19,915 | INFO | CurrentTrain:  epoch 2 | loss: 3.3280
+2024-05-26 06:39:42,956 | INFO | CurrentTrain:  epoch 3 | loss: 2.8713
+2024-05-26 06:40:05,962 | INFO | CurrentTrain:  epoch 4 | loss: 2.5394
+2024-05-26 06:40:29,012 | INFO | CurrentTrain:  epoch 5 | loss: 2.4202
+2024-05-26 06:40:52,012 | INFO | CurrentTrain:  epoch 6 | loss: 2.3731
+2024-05-26 06:41:15,022 | INFO | CurrentTrain:  epoch 7 | loss: 2.3540
+2024-05-26 06:41:38,028 | INFO | CurrentTrain:  epoch 8 | loss: 2.3422
+2024-05-26 06:42:01,007 | INFO | CurrentTrain:  epoch 9 | loss: 2.3363
+2024-05-26 06:45:09,889 | INFO | MemoryTrain:  epoch 0 | loss: 5.0759
+2024-05-26 06:46:48,228 | INFO | MemoryTrain:  epoch 1 | loss: 3.5519
+2024-05-26 06:48:26,477 | INFO | MemoryTrain:  epoch 2 | loss: 2.7654
+2024-05-26 06:50:05,072 | INFO | MemoryTrain:  epoch 3 | loss: 2.3622
+2024-05-26 06:51:43,617 | INFO | MemoryTrain:  epoch 4 | loss: 2.1199
+2024-05-26 06:53:22,146 | INFO | MemoryTrain:  epoch 5 | loss: 1.9967
+2024-05-26 06:55:00,636 | INFO | MemoryTrain:  epoch 6 | loss: 1.9670
+2024-05-26 06:56:39,257 | INFO | MemoryTrain:  epoch 7 | loss: 1.9359
+2024-05-26 06:58:17,927 | INFO | MemoryTrain:  epoch 8 | loss: 1.8919
+2024-05-26 06:59:57,004 | INFO | MemoryTrain:  epoch 9 | loss: 1.8520
+2024-05-26 07:01:07,936 | INFO | total acc: 74.58%   
+2024-05-26 07:08:55,386 | INFO | total acc: 71.79%   
+2024-05-26 07:09:30,776 | INFO | CurrentTrain:  epoch 0 | loss: 5.0272
+2024-05-26 07:09:53,797 | INFO | CurrentTrain:  epoch 1 | loss: 3.6756
+2024-05-26 07:10:16,813 | INFO | CurrentTrain:  epoch 2 | loss: 2.8790
+2024-05-26 07:10:39,836 | INFO | CurrentTrain:  epoch 3 | loss: 2.6218
+2024-05-26 07:11:02,852 | INFO | CurrentTrain:  epoch 4 | loss: 2.4954
+2024-05-26 07:11:25,858 | INFO | CurrentTrain:  epoch 5 | loss: 2.4181
+2024-05-26 07:11:48,862 | INFO | CurrentTrain:  epoch 6 | loss: 2.3721
+2024-05-26 07:12:11,859 | INFO | CurrentTrain:  epoch 7 | loss: 2.3489
+2024-05-26 07:12:34,877 | INFO | CurrentTrain:  epoch 8 | loss: 2.3378
+2024-05-26 07:12:57,871 | INFO | CurrentTrain:  epoch 9 | loss: 2.3303
+2024-05-26 07:16:27,529 | INFO | MemoryTrain:  epoch 0 | loss: 4.9772
+2024-05-26 07:18:19,797 | INFO | MemoryTrain:  epoch 1 | loss: 2.9773
+2024-05-26 07:20:12,039 | INFO | MemoryTrain:  epoch 2 | loss: 2.4487
+2024-05-26 07:22:04,354 | INFO | MemoryTrain:  epoch 3 | loss: 2.2478
+2024-05-26 07:23:56,561 | INFO | MemoryTrain:  epoch 4 | loss: 2.1712
+2024-05-26 07:25:48,714 | INFO | MemoryTrain:  epoch 5 | loss: 2.1255
+2024-05-26 07:27:40,863 | INFO | MemoryTrain:  epoch 6 | loss: 2.0242
+2024-05-26 07:29:33,025 | INFO | MemoryTrain:  epoch 7 | loss: 1.9528
+2024-05-26 07:31:25,202 | INFO | MemoryTrain:  epoch 8 | loss: 1.9580
+2024-05-26 07:33:17,385 | INFO | MemoryTrain:  epoch 9 | loss: 1.9209
+2024-05-26 07:34:25,491 | INFO | total acc: 82.43%   
+2024-05-26 07:43:06,866 | INFO | total acc: 66.73%   
+2024-05-26 07:43:06,980 | INFO | his_acc mean: [0.8584 0.8203 0.7717 0.7197 0.6844 0.642  0.6488 0.6396]

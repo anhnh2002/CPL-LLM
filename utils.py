@@ -86,6 +86,8 @@ class Moment:
         '''
         x (B, H)
         '''
+        x = x.to(self.config.device)
+        # labels = labels.to(self.config.device)
         if is_memory:
             ct_x = self.mem_features.to(self.config.device)
             ct_y = self.mem_labels

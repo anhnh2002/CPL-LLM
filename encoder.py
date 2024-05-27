@@ -190,8 +190,7 @@ class LlamaLMClassification(LlamaPreTrainedModel):
 
         """
         out = self.info_nce_fc(V) # N x dim_C
-        C = C.to(out.device)
-        out = torch.matmul(out, C.t()) # N x N
+        out = torch.matmul(out, C.t().to(out.device)) # N x N
         return out
 
     def get_input_embeddings(self):
@@ -233,10 +232,17 @@ class LlamaLMClassification(LlamaPreTrainedModel):
         )
         return_dict = return_dict if return_dict is not None else self.config.use_return_dict
 
+        e11 = []
+        # for each sample in the batch, acquire the positions of its [E11] and [E21]
+        for mask in attention_mask:
+            e11.append(mask.sum().item() - 1)
+
+        max_length = max(e11) + 1
+
         # decoder outputs consists of (dec_features, layer_state, dec_hidden, dec_attn)
         outputs = self.model(
-            input_ids=input_ids,
-            attention_mask=attention_mask,
+            input_ids=input_ids[:max_length],
+            attention_mask=attention_mask[:max_length],
             position_ids=position_ids,
             past_key_values=past_key_values,
             inputs_embeds=inputs_embeds,
@@ -248,11 +254,6 @@ class LlamaLMClassification(LlamaPreTrainedModel):
         )
 
         hidden_states = outputs[0] #B, N, H
-
-        e11 = []
-        # for each sample in the batch, acquire the positions of its [E11] and [E21]
-        for mask in attention_mask:
-            e11.append(mask.sum().item() - 1)
         
         output = []
         # for each sample in the batch, acquire its representations for [E11] and [E21]
@@ -265,4 +266,4 @@ class LlamaLMClassification(LlamaPreTrainedModel):
         logit = self.lm_head(output) # B,1,V
         output = output.view(output.shape[0],-1) # [B,1,H] --> [B,H]
 
-        return output.to(torch.float32), logit.squeeze(1).to(torch.float32)
+        return output.to("cuda:1"), logit.squeeze(1).to("cuda:1")

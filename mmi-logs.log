@@ -1,0 +1,268 @@
+2024-05-26 10:12:16,714 | INFO | #############params############
+2024-05-26 10:12:16,714 | INFO | Task=Tacred, 10-shot
+2024-05-26 10:12:16,714 | INFO | mem=1, margin=0.3, gen=1, gen_num=5
+2024-05-26 10:12:16,714 | INFO | #############params############
+2024-05-26 10:19:22,519 | INFO | CurrentTrain:  epoch 0 | loss: 12.5595
+2024-05-26 10:23:59,604 | INFO | CurrentTrain:  epoch 1 | loss: 10.3494
+2024-05-26 10:28:36,773 | INFO | CurrentTrain:  epoch 2 | loss: 9.5740
+2024-05-26 10:33:13,852 | INFO | CurrentTrain:  epoch 3 | loss: 8.8985
+2024-05-26 10:37:50,955 | INFO | CurrentTrain:  epoch 4 | loss: 8.7040
+2024-05-26 10:42:28,102 | INFO | CurrentTrain:  epoch 5 | loss: 9.1479
+2024-05-26 10:47:05,195 | INFO | CurrentTrain:  epoch 6 | loss: 8.8286
+2024-05-26 10:51:42,353 | INFO | CurrentTrain:  epoch 7 | loss: 8.4387
+2024-05-26 10:56:19,417 | INFO | CurrentTrain:  epoch 8 | loss: 8.4124
+2024-05-26 11:00:56,539 | INFO | CurrentTrain:  epoch 9 | loss: 8.1980
+2024-05-26 11:06:01,527 | INFO | total acc: 83.59%   
+2024-05-26 11:08:07,534 | INFO | total acc: 83.59%   
+2024-05-26 11:08:44,891 | INFO | #############params############
+2024-05-26 11:08:44,892 | INFO | Task=Tacred, 10-shot
+2024-05-26 11:08:44,892 | INFO | mem=1, margin=0.3, gen=1, gen_num=5
+2024-05-26 11:08:44,892 | INFO | #############params############
+2024-05-26 11:15:52,162 | INFO | CurrentTrain:  epoch 0 | loss: 12.7896
+2024-05-26 11:20:29,252 | INFO | CurrentTrain:  epoch 1 | loss: 10.8301
+2024-05-26 11:25:06,409 | INFO | CurrentTrain:  epoch 2 | loss: 10.4541
+2024-05-26 11:29:43,491 | INFO | CurrentTrain:  epoch 3 | loss: 10.3764
+2024-05-26 11:34:20,648 | INFO | CurrentTrain:  epoch 4 | loss: 10.1455
+2024-05-26 11:35:55,644 | INFO | #############params############
+2024-05-26 11:35:55,644 | INFO | Task=Tacred, 10-shot
+2024-05-26 11:35:55,644 | INFO | mem=1, margin=0.3, gen=1, gen_num=5
+2024-05-26 11:35:55,644 | INFO | #############params############
+2024-05-26 11:43:03,421 | INFO | CurrentTrain:  epoch 0 | loss: 12.7626
+2024-05-26 11:47:40,541 | INFO | CurrentTrain:  epoch 1 | loss: 10.1169
+2024-05-26 11:52:17,646 | INFO | CurrentTrain:  epoch 2 | loss: 9.3935
+2024-05-26 11:56:54,786 | INFO | CurrentTrain:  epoch 3 | loss: 9.1143
+2024-05-26 12:01:31,875 | INFO | CurrentTrain:  epoch 4 | loss: 8.7777
+2024-05-26 12:06:09,005 | INFO | CurrentTrain:  epoch 5 | loss: 8.9107
+2024-05-26 12:10:46,097 | INFO | CurrentTrain:  epoch 6 | loss: 8.6220
+2024-05-26 12:15:23,173 | INFO | CurrentTrain:  epoch 7 | loss: 8.5686
+2024-05-26 12:20:00,308 | INFO | CurrentTrain:  epoch 8 | loss: 8.1896
+2024-05-26 12:24:37,385 | INFO | CurrentTrain:  epoch 9 | loss: 7.9751
+2024-05-26 12:29:38,722 | INFO | total acc: 87.45%   
+2024-05-26 12:31:44,839 | INFO | total acc: 87.45%   
+2024-05-26 12:32:19,286 | ERROR | cant callculate info here: tensor([16])
+2024-05-26 12:32:19,555 | INFO | CurrentTrain:  epoch 0 | loss: 7.5140
+2024-05-26 12:32:42,530 | ERROR | cant callculate info here: tensor([44])
+2024-05-26 12:32:42,802 | INFO | CurrentTrain:  epoch 1 | loss: 6.9652
+2024-05-26 12:33:05,781 | ERROR | cant callculate info here: tensor([38])
+2024-05-26 12:33:06,051 | INFO | CurrentTrain:  epoch 2 | loss: 7.1506
+2024-05-26 12:33:29,041 | ERROR | cant callculate info here: tensor([26])
+2024-05-26 12:33:29,311 | INFO | CurrentTrain:  epoch 3 | loss: 9.3538
+2024-05-26 12:33:52,286 | ERROR | cant callculate info here: tensor([2])
+2024-05-26 12:33:52,550 | INFO | CurrentTrain:  epoch 4 | loss: 6.1159
+2024-05-26 12:34:15,534 | ERROR | cant callculate info here: tensor([38])
+2024-05-26 12:34:15,798 | INFO | CurrentTrain:  epoch 5 | loss: 6.4025
+2024-05-26 12:34:38,762 | ERROR | cant callculate info here: tensor([40])
+2024-05-26 12:34:39,031 | INFO | CurrentTrain:  epoch 6 | loss: 6.5178
+2024-05-26 12:35:02,022 | ERROR | cant callculate info here: tensor([16])
+2024-05-26 12:35:02,287 | INFO | CurrentTrain:  epoch 7 | loss: 7.0896
+2024-05-26 12:35:25,234 | ERROR | cant callculate info here: tensor([14])
+2024-05-26 12:35:25,504 | INFO | CurrentTrain:  epoch 8 | loss: 7.0456
+2024-05-26 12:35:48,502 | ERROR | cant callculate info here: tensor([9])
+2024-05-26 12:35:48,776 | INFO | CurrentTrain:  epoch 9 | loss: 7.3681
+2024-05-26 12:37:11,019 | INFO | MemoryTrain:  epoch 0 | loss: 7.1341
+2024-05-26 12:37:41,491 | INFO | MemoryTrain:  epoch 1 | loss: 6.1329
+2024-05-26 12:38:11,863 | INFO | MemoryTrain:  epoch 2 | loss: 5.8334
+2024-05-26 12:38:42,342 | INFO | MemoryTrain:  epoch 3 | loss: 5.5047
+2024-05-26 12:39:12,891 | INFO | MemoryTrain:  epoch 4 | loss: 5.1669
+2024-05-26 12:39:43,417 | INFO | MemoryTrain:  epoch 5 | loss: 4.7905
+2024-05-26 12:40:13,960 | INFO | MemoryTrain:  epoch 6 | loss: 4.7050
+2024-05-26 12:40:44,484 | INFO | MemoryTrain:  epoch 7 | loss: 4.6048
+2024-05-26 12:41:15,003 | INFO | MemoryTrain:  epoch 8 | loss: 4.1837
+2024-05-26 12:41:45,542 | INFO | MemoryTrain:  epoch 9 | loss: 3.9284
+2024-05-26 12:42:57,409 | INFO | total acc: 50.36%   
+2024-05-26 12:46:12,385 | INFO | total acc: 66.54%   
+2024-05-26 12:46:46,954 | ERROR | cant callculate info here: tensor([33])
+2024-05-26 12:46:47,221 | INFO | CurrentTrain:  epoch 0 | loss: 6.8008
+2024-05-26 12:47:10,218 | ERROR | cant callculate info here: tensor([45])
+2024-05-26 12:47:10,486 | INFO | CurrentTrain:  epoch 1 | loss: 5.5644
+2024-05-26 12:47:33,462 | ERROR | cant callculate info here: tensor([44])
+2024-05-26 12:47:33,731 | INFO | CurrentTrain:  epoch 2 | loss: 4.9495
+2024-05-26 12:47:56,695 | ERROR | cant callculate info here: tensor([5])
+2024-05-26 12:47:56,964 | INFO | CurrentTrain:  epoch 3 | loss: 4.5636
+2024-05-26 12:48:19,949 | ERROR | cant callculate info here: tensor([22])
+2024-05-26 12:48:20,223 | INFO | CurrentTrain:  epoch 4 | loss: 4.1731
+2024-05-26 12:48:43,188 | ERROR | cant callculate info here: tensor([14])
+2024-05-26 12:48:43,456 | INFO | CurrentTrain:  epoch 5 | loss: 3.7918
+2024-05-26 12:49:06,438 | ERROR | cant callculate info here: tensor([45])
+2024-05-26 12:49:06,706 | INFO | CurrentTrain:  epoch 6 | loss: 3.7124
+2024-05-26 12:49:29,684 | ERROR | cant callculate info here: tensor([30])
+2024-05-26 12:49:29,952 | INFO | CurrentTrain:  epoch 7 | loss: 3.5119
+2024-05-26 12:49:52,926 | ERROR | cant callculate info here: tensor([12])
+2024-05-26 12:49:53,191 | INFO | CurrentTrain:  epoch 8 | loss: 3.4799
+2024-05-26 12:50:16,181 | ERROR | cant callculate info here: tensor([32])
+2024-05-26 12:50:16,446 | INFO | CurrentTrain:  epoch 9 | loss: 3.4740
+2024-05-26 12:51:59,951 | INFO | MemoryTrain:  epoch 0 | loss: 8.2812
+2024-05-26 12:52:44,145 | INFO | MemoryTrain:  epoch 1 | loss: 6.4837
+2024-05-26 12:53:28,202 | INFO | MemoryTrain:  epoch 2 | loss: 4.9051
+2024-05-26 12:54:12,273 | INFO | MemoryTrain:  epoch 3 | loss: 4.5499
+2024-05-26 12:54:56,353 | INFO | MemoryTrain:  epoch 4 | loss: 4.4071
+2024-05-26 12:55:40,589 | INFO | MemoryTrain:  epoch 5 | loss: 3.8987
+2024-05-26 12:56:24,668 | INFO | MemoryTrain:  epoch 6 | loss: 3.7658
+2024-05-26 12:57:08,931 | INFO | MemoryTrain:  epoch 7 | loss: 3.9501
+2024-05-26 12:57:52,970 | INFO | MemoryTrain:  epoch 8 | loss: 3.5206
+2024-05-26 12:58:37,050 | INFO | MemoryTrain:  epoch 9 | loss: 3.7323
+2024-05-26 12:59:25,698 | INFO | total acc: 84.27%   
+2024-05-26 13:03:24,260 | INFO | total acc: 70.12%   
+2024-05-26 13:03:58,696 | ERROR | cant callculate info here: tensor([49])
+2024-05-26 13:03:58,966 | INFO | CurrentTrain:  epoch 0 | loss: 5.6231
+2024-05-26 13:04:21,941 | ERROR | cant callculate info here: tensor([43])
+2024-05-26 13:04:22,205 | INFO | CurrentTrain:  epoch 1 | loss: 4.3768
+2024-05-26 13:04:45,187 | ERROR | cant callculate info here: tensor([3])
+2024-05-26 13:04:45,455 | INFO | CurrentTrain:  epoch 2 | loss: 3.9896
+2024-05-26 13:05:08,440 | ERROR | cant callculate info here: tensor([0])
+2024-05-26 13:05:08,708 | INFO | CurrentTrain:  epoch 3 | loss: 3.7169
+2024-05-26 13:05:31,665 | ERROR | cant callculate info here: tensor([31])
+2024-05-26 13:05:31,934 | INFO | CurrentTrain:  epoch 4 | loss: 3.5698
+2024-05-26 13:05:54,910 | ERROR | cant callculate info here: tensor([49])
+2024-05-26 13:05:55,177 | INFO | CurrentTrain:  epoch 5 | loss: 3.4623
+2024-05-26 13:06:18,175 | ERROR | cant callculate info here: tensor([46])
+2024-05-26 13:06:18,446 | INFO | CurrentTrain:  epoch 6 | loss: 3.5092
+2024-05-26 13:06:41,415 | ERROR | cant callculate info here: tensor([47])
+2024-05-26 13:06:41,684 | INFO | CurrentTrain:  epoch 7 | loss: 3.4437
+2024-05-26 13:07:04,662 | ERROR | cant callculate info here: tensor([47])
+2024-05-26 13:07:04,927 | INFO | CurrentTrain:  epoch 8 | loss: 3.4397
+2024-05-26 13:07:27,912 | ERROR | cant callculate info here: tensor([47])
+2024-05-26 13:07:28,188 | INFO | CurrentTrain:  epoch 9 | loss: 3.4473
+2024-05-26 13:09:33,156 | INFO | MemoryTrain:  epoch 0 | loss: 7.3859
+2024-05-26 13:10:31,357 | INFO | MemoryTrain:  epoch 1 | loss: 5.2384
+2024-05-26 13:11:29,562 | INFO | MemoryTrain:  epoch 2 | loss: 4.1824
+2024-05-26 13:12:27,775 | INFO | MemoryTrain:  epoch 3 | loss: 3.8361
+2024-05-26 13:13:26,006 | INFO | MemoryTrain:  epoch 4 | loss: 3.6093
+2024-05-26 13:14:24,224 | INFO | MemoryTrain:  epoch 5 | loss: 3.5075
+2024-05-26 13:15:22,458 | INFO | MemoryTrain:  epoch 6 | loss: 3.4552
+2024-05-26 13:16:20,693 | INFO | MemoryTrain:  epoch 7 | loss: 3.4119
+2024-05-26 13:17:18,924 | INFO | MemoryTrain:  epoch 8 | loss: 3.3994
+2024-05-26 13:18:17,158 | INFO | MemoryTrain:  epoch 9 | loss: 3.3867
+2024-05-26 13:19:18,445 | INFO | total acc: 93.24%   
+2024-05-26 13:24:10,953 | INFO | total acc: 67.06%   
+2024-05-26 13:24:45,402 | ERROR | cant callculate info here: tensor([39])
+2024-05-26 13:24:45,669 | INFO | CurrentTrain:  epoch 0 | loss: 4.8577
+2024-05-26 13:25:08,670 | ERROR | cant callculate info here: tensor([10])
+2024-05-26 13:25:08,941 | INFO | CurrentTrain:  epoch 1 | loss: 4.0088
+2024-05-26 13:25:31,928 | ERROR | cant callculate info here: tensor([17])
+2024-05-26 13:25:32,191 | INFO | CurrentTrain:  epoch 2 | loss: 3.8537
+2024-05-26 13:25:55,170 | ERROR | cant callculate info here: tensor([41])
+2024-05-26 13:25:55,440 | INFO | CurrentTrain:  epoch 3 | loss: 4.4144
+2024-05-26 13:26:18,425 | ERROR | cant callculate info here: tensor([9])
+2024-05-26 13:26:18,697 | INFO | CurrentTrain:  epoch 4 | loss: 3.9967
+2024-05-26 13:26:41,679 | ERROR | cant callculate info here: tensor([0])
+2024-05-26 13:26:41,949 | INFO | CurrentTrain:  epoch 5 | loss: 3.5839
+2024-05-26 13:27:04,918 | ERROR | cant callculate info here: tensor([2])
+2024-05-26 13:27:05,186 | INFO | CurrentTrain:  epoch 6 | loss: 3.5120
+2024-05-26 13:27:28,189 | ERROR | cant callculate info here: tensor([13])
+2024-05-26 13:27:28,457 | INFO | CurrentTrain:  epoch 7 | loss: 3.4695
+2024-05-26 13:27:51,421 | ERROR | cant callculate info here: tensor([17])
+2024-05-26 13:27:51,688 | INFO | CurrentTrain:  epoch 8 | loss: 3.3989
+2024-05-26 13:28:14,662 | ERROR | cant callculate info here: tensor([9])
+2024-05-26 13:28:14,933 | INFO | CurrentTrain:  epoch 9 | loss: 3.3704
+2024-05-26 13:30:41,649 | INFO | MemoryTrain:  epoch 0 | loss: 5.2350
+2024-05-26 13:31:53,615 | INFO | MemoryTrain:  epoch 1 | loss: 3.9777
+2024-05-26 13:33:05,801 | INFO | MemoryTrain:  epoch 2 | loss: 3.5583
+2024-05-26 13:34:18,001 | INFO | MemoryTrain:  epoch 3 | loss: 3.4342
+2024-05-26 13:35:30,199 | INFO | MemoryTrain:  epoch 4 | loss: 3.3670
+2024-05-26 13:36:42,361 | INFO | MemoryTrain:  epoch 5 | loss: 3.3600
+2024-05-26 13:37:54,104 | ERROR | cant callculate info here: tensor([120, 117])
+2024-05-26 13:37:54,106 | ERROR | cant callculate info here: tensor([120, 117])
+2024-05-26 13:37:54,566 | INFO | MemoryTrain:  epoch 6 | loss: 3.3130
+2024-05-26 13:39:06,747 | INFO | MemoryTrain:  epoch 7 | loss: 3.3290
+2024-05-26 13:40:18,917 | INFO | MemoryTrain:  epoch 8 | loss: 3.3291
+2024-05-26 13:41:31,087 | INFO | MemoryTrain:  epoch 9 | loss: 3.3258
+2024-05-26 13:42:16,336 | INFO | total acc: 89.33%   
+2024-05-26 13:47:44,789 | INFO | total acc: 68.95%   
+2024-05-26 13:48:16,555 | INFO | CurrentTrain:  epoch 0 | loss: 6.0945
+2024-05-26 13:48:37,788 | INFO | CurrentTrain:  epoch 1 | loss: 5.1448
+2024-05-26 13:48:59,020 | INFO | CurrentTrain:  epoch 2 | loss: 4.1626
+2024-05-26 13:49:20,254 | INFO | CurrentTrain:  epoch 3 | loss: 3.7259
+2024-05-26 13:49:41,497 | INFO | CurrentTrain:  epoch 4 | loss: 3.5562
+2024-05-26 13:50:02,728 | INFO | CurrentTrain:  epoch 5 | loss: 3.4921
+2024-05-26 13:50:23,945 | INFO | CurrentTrain:  epoch 6 | loss: 3.5306
+2024-05-26 13:50:45,192 | INFO | CurrentTrain:  epoch 7 | loss: 3.5720
+2024-05-26 13:51:06,417 | INFO | CurrentTrain:  epoch 8 | loss: 3.4999
+2024-05-26 13:51:27,650 | INFO | CurrentTrain:  epoch 9 | loss: 3.3872
+2024-05-26 13:54:13,075 | INFO | MemoryTrain:  epoch 0 | loss: 6.9985
+2024-05-26 13:55:38,990 | INFO | MemoryTrain:  epoch 1 | loss: 4.9788
+2024-05-26 13:57:04,926 | INFO | MemoryTrain:  epoch 2 | loss: 4.0887
+2024-05-26 13:58:30,840 | INFO | MemoryTrain:  epoch 3 | loss: 3.8873
+2024-05-26 13:59:56,772 | INFO | MemoryTrain:  epoch 4 | loss: 3.6808
+2024-05-26 14:01:22,690 | INFO | MemoryTrain:  epoch 5 | loss: 3.5380
+2024-05-26 14:02:48,594 | INFO | MemoryTrain:  epoch 6 | loss: 3.4552
+2024-05-26 14:04:14,515 | INFO | MemoryTrain:  epoch 7 | loss: 3.4072
+2024-05-26 14:05:40,414 | INFO | MemoryTrain:  epoch 8 | loss: 3.3928
+2024-05-26 14:07:06,338 | INFO | MemoryTrain:  epoch 9 | loss: 3.3744
+2024-05-26 14:08:01,639 | INFO | total acc: 78.26%   
+2024-05-26 14:14:15,494 | INFO | total acc: 63.07%   
+2024-05-26 14:14:49,979 | ERROR | cant callculate info here: tensor([43])
+2024-05-26 14:14:50,244 | INFO | CurrentTrain:  epoch 0 | loss: 7.4534
+2024-05-26 14:15:13,197 | ERROR | cant callculate info here: tensor([12])
+2024-05-26 14:15:13,471 | INFO | CurrentTrain:  epoch 1 | loss: 7.3427
+2024-05-26 14:15:36,443 | ERROR | cant callculate info here: tensor([42])
+2024-05-26 14:15:36,710 | INFO | CurrentTrain:  epoch 2 | loss: 5.6011
+2024-05-26 14:15:59,685 | ERROR | cant callculate info here: tensor([46])
+2024-05-26 14:15:59,955 | INFO | CurrentTrain:  epoch 3 | loss: 5.3074
+2024-05-26 14:16:22,927 | ERROR | cant callculate info here: tensor([17])
+2024-05-26 14:16:23,196 | INFO | CurrentTrain:  epoch 4 | loss: 4.6236
+2024-05-26 14:16:46,181 | ERROR | cant callculate info here: tensor([49])
+2024-05-26 14:16:46,447 | INFO | CurrentTrain:  epoch 5 | loss: 4.2277
+2024-05-26 14:17:09,428 | ERROR | cant callculate info here: tensor([1])
+2024-05-26 14:17:09,696 | INFO | CurrentTrain:  epoch 6 | loss: 4.5138
+2024-05-26 14:17:32,670 | ERROR | cant callculate info here: tensor([41])
+2024-05-26 14:17:32,938 | INFO | CurrentTrain:  epoch 7 | loss: 3.8484
+2024-05-26 14:17:55,902 | ERROR | cant callculate info here: tensor([14])
+2024-05-26 14:17:56,174 | INFO | CurrentTrain:  epoch 8 | loss: 3.6587
+2024-05-26 14:18:19,161 | ERROR | cant callculate info here: tensor([2])
+2024-05-26 14:18:19,438 | INFO | CurrentTrain:  epoch 9 | loss: 3.7078
+2024-05-26 14:21:23,605 | INFO | MemoryTrain:  epoch 0 | loss: 6.1650
+2024-05-26 14:23:03,499 | INFO | MemoryTrain:  epoch 1 | loss: 4.5510
+2024-05-26 14:24:43,340 | INFO | MemoryTrain:  epoch 2 | loss: 3.8906
+2024-05-26 14:26:23,232 | INFO | MemoryTrain:  epoch 3 | loss: 3.7808
+2024-05-26 14:28:03,082 | INFO | MemoryTrain:  epoch 4 | loss: 3.6279
+2024-05-26 14:29:42,946 | INFO | MemoryTrain:  epoch 5 | loss: 3.5109
+2024-05-26 14:31:22,795 | INFO | MemoryTrain:  epoch 6 | loss: 3.4415
+2024-05-26 14:33:02,706 | INFO | MemoryTrain:  epoch 7 | loss: 3.4189
+2024-05-26 14:34:42,569 | INFO | MemoryTrain:  epoch 8 | loss: 3.3921
+2024-05-26 14:36:22,419 | INFO | MemoryTrain:  epoch 9 | loss: 3.3901
+2024-05-26 14:38:00,928 | INFO | total acc: 75.42%   
+2024-05-26 14:45:40,965 | INFO | total acc: 66.93%   
+2024-05-26 14:46:15,587 | ERROR | cant callculate info here: tensor([2])
+2024-05-26 14:46:15,860 | INFO | CurrentTrain:  epoch 0 | loss: 5.6086
+2024-05-26 14:46:38,826 | ERROR | cant callculate info here: tensor([13])
+2024-05-26 14:46:39,095 | INFO | CurrentTrain:  epoch 1 | loss: 4.7173
+2024-05-26 14:47:02,070 | ERROR | cant callculate info here: tensor([37])
+2024-05-26 14:47:02,339 | INFO | CurrentTrain:  epoch 2 | loss: 3.8798
+2024-05-26 14:47:25,326 | ERROR | cant callculate info here: tensor([40])
+2024-05-26 14:47:25,593 | INFO | CurrentTrain:  epoch 3 | loss: 3.5816
+2024-05-26 14:47:48,567 | ERROR | cant callculate info here: tensor([46])
+2024-05-26 14:47:48,837 | INFO | CurrentTrain:  epoch 4 | loss: 3.4684
+2024-05-26 14:48:11,812 | ERROR | cant callculate info here: tensor([29])
+2024-05-26 14:48:12,082 | INFO | CurrentTrain:  epoch 5 | loss: 3.4565
+2024-05-26 14:48:35,057 | ERROR | cant callculate info here: tensor([42])
+2024-05-26 14:48:35,324 | INFO | CurrentTrain:  epoch 6 | loss: 3.3597
+2024-05-26 14:48:58,295 | ERROR | cant callculate info here: tensor([5])
+2024-05-26 14:48:58,561 | INFO | CurrentTrain:  epoch 7 | loss: 3.4574
+2024-05-26 14:49:21,545 | ERROR | cant callculate info here: tensor([45])
+2024-05-26 14:49:21,815 | INFO | CurrentTrain:  epoch 8 | loss: 3.4049
+2024-05-26 14:49:44,789 | ERROR | cant callculate info here: tensor([29])
+2024-05-26 14:49:45,058 | INFO | CurrentTrain:  epoch 9 | loss: 3.3859
+2024-05-26 14:53:12,908 | ERROR | cant callculate info here: tensor([23])
+2024-05-26 14:53:13,178 | INFO | MemoryTrain:  epoch 0 | loss: 6.0177
+2024-05-26 14:55:06,558 | ERROR | cant callculate info here: tensor([73])
+2024-05-26 14:55:06,838 | INFO | MemoryTrain:  epoch 1 | loss: 4.5383
+2024-05-26 14:57:00,137 | ERROR | cant callculate info here: tensor([245])
+2024-05-26 14:57:00,401 | INFO | MemoryTrain:  epoch 2 | loss: 4.1776
+2024-05-26 14:58:53,758 | ERROR | cant callculate info here: tensor([37])
+2024-05-26 14:58:54,028 | INFO | MemoryTrain:  epoch 3 | loss: 4.1826
+2024-05-26 15:00:47,565 | ERROR | cant callculate info here: tensor([149])
+2024-05-26 15:00:47,843 | INFO | MemoryTrain:  epoch 4 | loss: 3.9476
+2024-05-26 15:02:41,367 | ERROR | cant callculate info here: tensor([56])
+2024-05-26 15:02:41,636 | INFO | MemoryTrain:  epoch 5 | loss: 3.8979
+2024-05-26 15:04:35,196 | ERROR | cant callculate info here: tensor([111])
+2024-05-26 15:04:35,473 | INFO | MemoryTrain:  epoch 6 | loss: 3.7097
+2024-05-26 15:06:29,011 | ERROR | cant callculate info here: tensor([202])
+2024-05-26 15:06:29,284 | INFO | MemoryTrain:  epoch 7 | loss: 3.5047
+2024-05-26 15:08:22,857 | ERROR | cant callculate info here: tensor([93])
+2024-05-26 15:08:23,126 | INFO | MemoryTrain:  epoch 8 | loss: 3.4445
+2024-05-26 15:10:16,476 | ERROR | cant callculate info here: tensor([68])
+2024-05-26 15:10:16,746 | INFO | MemoryTrain:  epoch 9 | loss: 3.4240
+2024-05-26 15:11:28,914 | INFO | total acc: 72.08%   
+2024-05-26 15:20:08,052 | INFO | total acc: 66.07%   
+2024-05-26 15:20:08,174 | INFO | his_acc mean: [0.8745 0.6654 0.7012 0.6706 0.6895 0.6307 0.6693 0.6607]

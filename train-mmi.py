@@ -34,6 +34,43 @@ file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 logger.addHandler(stdout_handler)
 
+# device_map = {'model.embed_tokens': 0,
+#  'model.layers.0': 0,
+#  'model.layers.1': 0,
+#  'model.layers.2': 0,
+#  'model.layers.3': 0,
+#  'model.layers.4': 0,
+#  'model.layers.5': 0,
+#  'model.layers.6': 0,
+#  'model.layers.7': 0,
+#  'model.layers.8': 0,
+#  'model.layers.9': 0,
+#  'model.layers.10': 0,
+#  'model.layers.11': 0,
+#  'model.layers.12': 1,
+#  'model.layers.13': 1,
+#  'model.layers.14': 1,
+#  'model.layers.15': 1,
+#  'model.layers.16': 1,
+#  'model.layers.17': 1,
+#  'model.layers.18': 1,
+#  'model.layers.19': 1,
+#  'model.layers.20': 1,
+#  'model.layers.21': 1,
+#  'model.layers.22': 1,
+#  'model.layers.23': 1,
+#  'model.layers.24': 1,
+#  'model.layers.25': 1,
+#  'model.layers.26': 1,
+#  'model.layers.27': 1,
+#  'model.layers.28': 1,
+#  'model.layers.29': 1,
+#  'model.layers.30': 1,
+#  'model.layers.31': 1,
+#  'model.norm': 1,
+#  'lm_head': 1,
+#  'info_nce_fc': 1}
+device_map = "auto"
 
 class Manager(object):
     def __init__(self, config) -> None:
@@ -64,7 +101,7 @@ class Manager(object):
         encoder.eval()
         for step, (instance, label, idx) in enumerate(data_loader):
             for k in instance.keys():
-                instance[k] = instance[k].to(self.config.device)
+                instance[k] = instance[k].to("cuda:0")
             hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
             fea = hidden.detach().cpu().data # (1, H)
             features.append(fea)    
@@ -84,7 +121,7 @@ class Manager(object):
         encoder.eval()
         for step, (instance, label, idx) in tqdm(enumerate(data_loader)):
             for k in instance.keys():
-                instance[k] = instance[k].to(self.config.device)
+                instance[k] = instance[k].to("cuda:0")
             hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask']) 
             fea = hidden.detach().cpu().data # (1, H)
             features.append(fea)
@@ -135,7 +172,7 @@ class Manager(object):
             accum_iter = 8
             for batch_num, (instance, labels, ind) in tqdm(enumerate(data_loader)):
                 for k in instance.keys():
-                    instance[k] = instance[k].to(self.config.device)
+                    instance[k] = instance[k].to("cuda:0")
                 hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
                 loss = self.moment.contrastive_loss(hidden, labels, is_memory)
 
@@ -149,17 +186,14 @@ class Manager(object):
                     positive_hidden = hidden[j].unsqueeze(0)
                     negative_hidden = hidden[negative_sample_indexs]
 
-                    positive_lmhead_output = lmhead_output[j].unsqueeze(0)
+                    positive_lmhead_output = lmhead_output[j]#.unsqueeze(0)
                     negative_lmhead_output = lmhead_output[negative_sample_indexs]
-
 
                     f_pos = encoder.infoNCE_f(positive_lmhead_output, positive_hidden)
                     f_neg = encoder.infoNCE_f(positive_lmhead_output, negative_hidden)
 
-                    # print(f_pos.shape)
-                    # print(f_neg.shape)
                     f_concat = torch.cat([f_pos, f_neg], dim=1).squeeze()
-                    f_concat = torch.log(torch.max(f_concat , torch.tensor(1e-9).to(self.config.device)))
+                    f_concat = torch.log(torch.max(f_concat , torch.tensor(1e-9).to("cuda:1")))
                     try:
                         infoNCE_loss += -torch.log(softmax(f_concat)[0])
                     except:
@@ -174,12 +208,12 @@ class Manager(object):
 
                 total_loss += loss.item()
 
-                loss = loss/accum_iter
+                # loss = loss/accum_iter
                 loss.backward()
 
-                if ((batch_num + 1) % accum_iter == 0) or (batch_num + 1 == len(data_loader)):
-                    optimizer.step()
-                    optimizer.zero_grad()
+                # if ((batch_num + 1) % accum_iter == 0) or (batch_num + 1 == len(data_loader)):
+                optimizer.step()
+                optimizer.zero_grad()
                 # update moment
                 if is_memory:
                     self.moment.update(ind, hidden.detach().cpu().data, is_memory=True)
@@ -209,7 +243,7 @@ class Manager(object):
         encoder.eval()
         for batch_num, (instance, label, _) in enumerate(test_loader):
             for k in instance.keys():
-                instance[k] = instance[k].to(self.config.device)
+                instance[k] = instance[k].to("cuda:0")
             hidden, lmhead_output = encoder(input_ids=instance['ids'], attention_mask=instance['mask'])
             fea = hidden.cpu().data # place in cpu to eval
             logits = -self._edist(fea, seen_proto) # (B, N) ;N is the number of seen relations
@@ -263,7 +297,7 @@ class Manager(object):
         encoder = LlamaLMClassification.from_pretrained("meta-llama/Llama-2-7b-hf",
                                                         # torch_dtype=torch.float16,
                                                         token="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",
-                                                        device_map="auto")
+                                                        device_map=device_map)
         peft_config = LoraConfig(task_type=TaskType.SEQ_CLS,
                                 target_modules=["q_proj", "v_proj", "o_proj", "lm_head"],
                                 r=16,
