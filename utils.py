@@ -7,6 +7,9 @@ import torch.nn.functional as F
 from data_loader import get_data_loader_BERT
 from nltk import word_tokenize
 from retry import retry
+import nltk
+
+nltk.download('punkt')
 
 class Moment:
     def __init__(self, config) -> None:

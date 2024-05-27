@@ -19,20 +19,7 @@ from peft import get_peft_model, LoraConfig, TaskType
 from tqdm import tqdm
 import logging
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s')
 
-stdout_handler = logging.StreamHandler(sys.stdout)
-stdout_handler.setLevel(logging.DEBUG)
-stdout_handler.setFormatter(formatter)
-
-file_handler = logging.FileHandler('mmi-logs.log')
-file_handler.setLevel(logging.DEBUG)
-file_handler.setFormatter(formatter)
-
-logger.addHandler(file_handler)
-logger.addHandler(stdout_handler)
 
 # device_map = {'model.embed_tokens': 0,
 #  'model.layers.0': 0,
@@ -73,9 +60,10 @@ logger.addHandler(stdout_handler)
 device_map = "auto"
 
 class Manager(object):
-    def __init__(self, config) -> None:
+    def __init__(self, config, logger) -> None:
         super().__init__()
         self.config = config
+        self.logger = logger
         
     def _edist(self, x1, x2):
         '''
@@ -198,7 +186,7 @@ class Manager(object):
                         infoNCE_loss += -torch.log(softmax(f_concat)[0])
                     except:
                         print(f"cant callculate info here: {ind}")
-                        logger.error(f"cant callculate info here: {ind}")
+                        self.logger.error(f"cant callculate info here: {ind}")
 
                 infoNCE_loss = infoNCE_loss / len(list_labels)
                 loss = 0.8*loss + infoNCE_loss
@@ -226,10 +214,10 @@ class Manager(object):
             total_loss = total_loss/len(data_loader)
             if is_memory:
                 sys.stdout.write(f'MemoryTrain:  epoch {i} | loss: {total_loss:.4f}' + '\r')
-                logger.info(f'MemoryTrain:  epoch {i} | loss: {total_loss:.4f}')
+                self.logger.info(f'MemoryTrain:  epoch {i} | loss: {total_loss:.4f}')
             else:
                 sys.stdout.write(f'CurrentTrain:  epoch {i} | loss: {total_loss:.4f}' + '\r')
-                logger.info(f'CurrentTrain:  epoch {i} | loss: {total_loss:.4f}')
+                self.logger.info(f'CurrentTrain:  epoch {i} | loss: {total_loss:.4f}')
             total_loss=0
             sys.stdout.flush() 
         print('')             
@@ -258,7 +246,7 @@ class Manager(object):
             acc = correct / batch_size
             corrects += correct
             total += batch_size
-        logger.info(f'total acc: {100 * (corrects / total):.2f}%   ')
+        self.logger.info(f'total acc: {100 * (corrects / total):.2f}%   ')
         sys.stdout.write(f'total acc: {100 * (corrects / total):.2f}%   ' + '\r')
         sys.stdout.flush()        
         print('')
@@ -389,6 +377,21 @@ if __name__ == '__main__':
     config.num_k = args.num_k
     config.num_gen = args.num_gen
 
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+    formatter = logging.Formatter('%(asctime)s | %(levelname)s | %(message)s')
+
+    stdout_handler = logging.StreamHandler(sys.stdout)
+    stdout_handler.setLevel(logging.DEBUG)
+    stdout_handler.setFormatter(formatter)
+
+    file_handler = logging.FileHandler(f'mmi-logs-{config.task_name}.log')
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(formatter)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(stdout_handler)
+
     # config 
     print('#############params############')
     logger.info('#############params############')
@@ -444,7 +447,7 @@ if __name__ == '__main__':
         config.seed = base_seed + i * 100
         print('--------Round ', i)
         print('seed: ', config.seed)
-        manager = Manager(config)
+        manager = Manager(config, logger)
         acc = manager.train()
         acc_list.append(acc)
         torch.cuda.empty_cache()
