@@ -181,7 +181,7 @@ class Manager(object):
                     f_neg = encoder.infoNCE_f(positive_lmhead_output, negative_hidden)
 
                     f_concat = torch.cat([f_pos, f_neg], dim=1).squeeze()
-                    f_concat = torch.log(torch.max(f_concat , torch.tensor(1e-9).to("cuda:1")))
+                    f_concat = torch.log(torch.max(f_concat , torch.tensor(1e-9).to("cuda:0")))
                     try:
                         infoNCE_loss += -torch.log(softmax(f_concat)[0])
                     except:
