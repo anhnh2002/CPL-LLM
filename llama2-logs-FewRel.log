@@ -1,0 +1,9 @@
+2024-05-29 04:29:07,025 | INFO | #############params############
+2024-05-29 04:29:07,025 | INFO | Task=FewRel, 5-shot
+2024-05-29 04:29:07,025 | INFO | mem=1, margin=0.3, gen=1, gen_num=2
+2024-05-29 04:29:07,025 | INFO | #############params############
+2024-05-29 04:29:43,571 | INFO | #############params############
+2024-05-29 04:29:43,571 | INFO | Task=FewRel, 5-shot
+2024-05-29 04:29:43,572 | INFO | mem=1, margin=0.3, gen=1, gen_num=2
+2024-05-29 04:29:43,572 | INFO | #############params############
+2024-05-29 04:29:53,723 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
