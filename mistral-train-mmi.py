@@ -275,7 +275,7 @@ class Manager(object):
 
     def train(self):
         # sampler 
-        sampler = data_sampler_CFRL(config=self.config, seed=self.config.seed)
+        sampler = data_sampler_CFRL(config=self.config, seed=self.config.seed, model="mistralai/Mistral-7B-v0.3")
         print('prepared data!')
         self.id2rel = sampler.id2rel
         self.rel2id = sampler.rel2id

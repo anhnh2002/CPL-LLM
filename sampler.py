@@ -8,13 +8,13 @@ prompt = """{sentence}
 Relation between "{e1}" and "{e2}" is"""
 
 class data_sampler_CFRL(object):
-    def __init__(self, config=None, seed=None):
+    def __init__(self, config=None, seed=None, model="meta-llama/Llama-2-7b-hf"):
         self.config = config
         self.max_length = self.config.max_length
         self.task_length = self.config.task_length
         self.unused_tokens = ['[unused0]', '[unused1]', '[unused2]', '[unused3]']
         self.unused_token = '[unused0]'
-        self.tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf",
+        self.tokenizer = AutoTokenizer.from_pretrained(model,
                                               token="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",
                                               use_fast=False)
         self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
