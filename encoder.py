@@ -266,4 +266,4 @@ class LlamaLMClassification(LlamaPreTrainedModel):
         logit = self.lm_head(output) # B,1,V
         output = output.view(output.shape[0],-1) # [B,1,H] --> [B,H]
 
-        return output.to("cuda:1"), logit.squeeze(1).to("cuda:1")
+        return output, logit.squeeze(1)
