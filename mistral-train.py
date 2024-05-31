@@ -13,7 +13,7 @@ from config import Config
 from sampler import data_sampler_CFRL
 from data_loader import get_data_loader_BERT
 from utils import Moment, gen_data
-from encoder import LlamaClassification
+from encoder import MistralClassification
 from peft import get_peft_model, LoraConfig, TaskType
 
 from tqdm import tqdm
@@ -209,14 +209,14 @@ class Manager(object):
 
     def train(self):
         # sampler 
-        sampler = data_sampler_CFRL(config=self.config, seed=self.config.seed)
+        sampler = data_sampler_CFRL(config=self.config, seed=self.config.seed, model="mistralai/Mistral-7B-v0.3")
         print('prepared data!')
         self.id2rel = sampler.id2rel
         self.rel2id = sampler.rel2id
         self.r2desc = self._read_description(self.config.relation_description)
 
         # encoder
-        encoder = LlamaClassification.from_pretrained("meta-llama/Llama-2-7b-hf",
+        encoder = MistralClassification.from_pretrained("mistralai/Mistral-7B-v0.3",
                                                         # torch_dtype=torch.float16,
                                                         token="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",
                                                         device_map="auto")
@@ -318,7 +318,7 @@ if __name__ == '__main__':
     stdout_handler.setLevel(logging.DEBUG)
     stdout_handler.setFormatter(formatter)
 
-    file_handler = logging.FileHandler(f'llama2-logs-{config.task_name}.log')
+    file_handler = logging.FileHandler(f'mistral-logs-{config.task_name}.log')
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(formatter)
 

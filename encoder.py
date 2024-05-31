@@ -179,7 +179,8 @@ class LlamaLMClassification(LlamaPreTrainedModel):
         self.model = LlamaModel(config)
         self.vocab_size = config.vocab_size
         self.lm_head = nn.Linear(config.hidden_size, config.vocab_size, bias=False)
-        self.info_nce_fc = nn.Linear(config.vocab_size, config.hidden_size , bias= False)
+        self.bottle_neck = nn.Linear(config.vocab_size, config.bottle_neck_size, bias=False)
+        self.info_nce_fc = nn.Linear(config.bottle_neck_size, config.hidden_size , bias= False)
 
         # Initialize weights and apply final processing
         self.post_init()
@@ -190,6 +191,7 @@ class LlamaLMClassification(LlamaPreTrainedModel):
         C : 1 x dim_C
 
         """
+        V = self.bottle_neck(V)
         out = self.info_nce_fc(V) # N x dim_C
         out = torch.matmul(out, C.t().to(out.device)) # N x N
         return out

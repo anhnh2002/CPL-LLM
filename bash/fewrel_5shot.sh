@@ -1,1 +1,1 @@
-python train.py --task_name FewRel --num_k 5 --num_gen 2
+CUDA_VISIBLE_DEVICES=1 python train.py --task_name FewRel --num_k 5 --num_gen 2

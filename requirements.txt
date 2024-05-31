@@ -7,3 +7,4 @@ nltk==3.8.1
 retry
 peft==0.10.0
 sentencepiece==0.2.0
+protobuf
