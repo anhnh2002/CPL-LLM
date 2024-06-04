@@ -287,11 +287,11 @@ class Manager(object):
                                                         token="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",
                                                         device_map=device_map)
         peft_config = LoraConfig(task_type=TaskType.SEQ_CLS,
-                                target_modules=["q_proj", "v_proj", "o_proj", "lm_head"],
+                                target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "lm_head"],
                                 r=16,
                                 lora_alpha=32,
                                 lora_dropout=0.1,
-                                modules_to_save=["info_nce_fc"])
+                                modules_to_save=["info_nce_fc", "bottle_neck"])
         
         encoder = get_peft_model(encoder, peft_config)
 

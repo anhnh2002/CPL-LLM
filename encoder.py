@@ -175,12 +175,12 @@ class LlamaLMClassification(LlamaPreTrainedModel):
     _tied_weights_keys = ["lm_head.weight"]
 
     def __init__(self, config):
-        super().__init__(config)
+        super().__init__(config, bottle_neck_size=512)
         self.model = LlamaModel(config)
         self.vocab_size = config.vocab_size
         self.lm_head = nn.Linear(config.hidden_size, config.vocab_size, bias=False)
-        self.bottle_neck = nn.Linear(config.vocab_size, config.bottle_neck_size, bias=False)
-        self.info_nce_fc = nn.Linear(config.bottle_neck_size, config.hidden_size , bias= False)
+        self.bottle_neck = nn.Linear(config.vocab_size, bottle_neck_size, bias=False)
+        self.info_nce_fc = nn.Linear(bottle_neck_size, config.hidden_size , bias= False)
 
         # Initialize weights and apply final processing
         self.post_init()
