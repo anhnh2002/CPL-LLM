@@ -18,6 +18,11 @@ from peft import get_peft_model, LoraConfig, TaskType
 
 from tqdm import tqdm
 import logging
+import pickle as pkl
+import os
+
+if os.path.exists('./representation') == False:
+    os.makedirs('./representation')
 
 
 class Manager(object):
@@ -288,6 +293,17 @@ class Manager(object):
                 seen_relid.append(self.rel2id[rel])
             ac1 = self.eval_encoder_proto(encoder, seen_proto, seen_relid, test_data_initialize_cur)
             ac2 = self.eval_encoder_proto(encoder, seen_proto, seen_relid, test_data_initialize_seen)
+
+            # eval on training data and memory data
+            train_and_memory = training_data_initialize[:]
+            for rel in seen_relations:
+                train_and_memory += memory_samples[rel]
+
+            ac3 , rep_dict_train = self.eval_encoder_proto(encoder, seen_proto, seen_relid, train_and_memory)
+
+            pkl.dump(rep_dict_train, open(f'./representation/seed_{str(config.seed)}_{self.config.task_name}_{self.config.num_k}-shot_{step}_train.pkl', 'wb'))
+            pkl.dump(rep_dict_test, open(f'./representation/seed_{str(config.seed)}_{self.config.task_name}_{self.config.num_k}-shot_{step}_test.pkl', 'wb'))
+
             cur_acc_num.append(ac1)
             total_acc_num.append(ac2)
             cur_acc.append('{:.4f}'.format(ac1))
